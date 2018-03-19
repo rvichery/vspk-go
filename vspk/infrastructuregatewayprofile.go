@@ -60,29 +60,29 @@ type InfrastructureGatewayProfile struct {
 	ParentType                   string `json:"parentType,omitempty"`
 	Owner                        string `json:"owner,omitempty"`
 	NTPServerKey                 string `json:"NTPServerKey,omitempty"`
-	NTPServerKeyID               int    `json:"NTPServerKeyID,omitempty"`
+	NTPServerKeyID               int    `json:"NTPServerKeyID"`
 	Name                         string `json:"name,omitempty"`
 	LastUpdatedBy                string `json:"lastUpdatedBy,omitempty"`
-	DatapathSyncTimeout          int    `json:"datapathSyncTimeout,omitempty"`
+	DatapathSyncTimeout          int    `json:"datapathSyncTimeout"`
 	DeadTimer                    string `json:"deadTimer,omitempty"`
 	DeadTimerEnabled             bool   `json:"deadTimerEnabled"`
 	RemoteLogMode                string `json:"remoteLogMode,omitempty"`
 	RemoteLogServerAddress       string `json:"remoteLogServerAddress,omitempty"`
-	RemoteLogServerPort          int    `json:"remoteLogServerPort,omitempty"`
+	RemoteLogServerPort          int    `json:"remoteLogServerPort"`
 	Description                  string `json:"description,omitempty"`
 	MetadataUpgradePath          string `json:"metadataUpgradePath,omitempty"`
-	FlowEvictionThreshold        int    `json:"flowEvictionThreshold,omitempty"`
+	FlowEvictionThreshold        int    `json:"flowEvictionThreshold"`
 	EnterpriseID                 string `json:"enterpriseID,omitempty"`
 	EntityScope                  string `json:"entityScope,omitempty"`
 	ControllerLessDuration       string `json:"controllerLessDuration,omitempty"`
 	ControllerLessForwardingMode string `json:"controllerLessForwardingMode,omitempty"`
 	ControllerLessRemoteDuration string `json:"controllerLessRemoteDuration,omitempty"`
 	ForceImmediateSystemSync     bool   `json:"forceImmediateSystemSync"`
-	OpenFlowAuditTimer           int    `json:"openFlowAuditTimer,omitempty"`
+	OpenFlowAuditTimer           int    `json:"openFlowAuditTimer"`
 	UpgradeAction                string `json:"upgradeAction,omitempty"`
 	ProxyDNSName                 string `json:"proxyDNSName,omitempty"`
 	UseTwoFactor                 bool   `json:"useTwoFactor"`
-	StatsCollectorPort           int    `json:"statsCollectorPort,omitempty"`
+	StatsCollectorPort           int    `json:"statsCollectorPort"`
 	ExternalID                   string `json:"externalID,omitempty"`
 	SystemSyncScheduler          string `json:"systemSyncScheduler,omitempty"`
 }

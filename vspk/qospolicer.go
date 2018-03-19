@@ -61,10 +61,10 @@ type QosPolicer struct {
 	Owner         string `json:"owner,omitempty"`
 	Name          string `json:"name,omitempty"`
 	LastUpdatedBy string `json:"lastUpdatedBy,omitempty"`
-	Rate          int    `json:"rate,omitempty"`
+	Rate          int    `json:"rate"`
 	Description   string `json:"description,omitempty"`
 	EntityScope   string `json:"entityScope,omitempty"`
-	Burst         int    `json:"burst,omitempty"`
+	Burst         int    `json:"burst"`
 	ExternalID    string `json:"externalID,omitempty"`
 }
 

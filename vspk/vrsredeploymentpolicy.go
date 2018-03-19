@@ -62,14 +62,14 @@ type VRSRedeploymentpolicy struct {
 	ALUbr0StatusRedeploymentEnabled        bool    `json:"ALUbr0StatusRedeploymentEnabled"`
 	CPUUtilizationRedeploymentEnabled      bool    `json:"CPUUtilizationRedeploymentEnabled"`
 	CPUUtilizationThreshold                float64 `json:"CPUUtilizationThreshold,omitempty"`
-	VRSCorrectiveActionDelay               int     `json:"VRSCorrectiveActionDelay,omitempty"`
+	VRSCorrectiveActionDelay               int     `json:"VRSCorrectiveActionDelay"`
 	VRSProcessRedeploymentEnabled          bool    `json:"VRSProcessRedeploymentEnabled"`
 	VRSVSCStatusRedeploymentEnabled        bool    `json:"VRSVSCStatusRedeploymentEnabled"`
 	LastUpdatedBy                          string  `json:"lastUpdatedBy,omitempty"`
-	RedeploymentDelay                      int     `json:"redeploymentDelay,omitempty"`
+	RedeploymentDelay                      int     `json:"redeploymentDelay"`
 	MemoryUtilizationRedeploymentEnabled   bool    `json:"memoryUtilizationRedeploymentEnabled"`
 	MemoryUtilizationThreshold             float64 `json:"memoryUtilizationThreshold,omitempty"`
-	DeploymentCountThreshold               int     `json:"deploymentCountThreshold,omitempty"`
+	DeploymentCountThreshold               int     `json:"deploymentCountThreshold"`
 	JesxmonProcessRedeploymentEnabled      bool    `json:"jesxmonProcessRedeploymentEnabled"`
 	EntityScope                            string  `json:"entityScope,omitempty"`
 	LogDiskUtilizationRedeploymentEnabled  bool    `json:"logDiskUtilizationRedeploymentEnabled"`

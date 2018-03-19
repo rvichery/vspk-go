@@ -63,16 +63,16 @@ type OSPFInterface struct {
 	PassiveEnabled     bool          `json:"passiveEnabled"`
 	LastUpdatedBy      string        `json:"lastUpdatedBy,omitempty"`
 	AdminState         string        `json:"adminState,omitempty"`
-	DeadInterval       int           `json:"deadInterval,omitempty"`
-	HelloInterval      int           `json:"helloInterval,omitempty"`
+	DeadInterval       int           `json:"deadInterval"`
+	HelloInterval      int           `json:"helloInterval"`
 	Description        string        `json:"description,omitempty"`
 	MessageDigestKeys  []interface{} `json:"messageDigestKeys,omitempty"`
-	Metric             int           `json:"metric,omitempty"`
+	Metric             int           `json:"metric"`
 	InterfaceType      string        `json:"interfaceType,omitempty"`
 	EntityScope        string        `json:"entityScope,omitempty"`
-	Priority           int           `json:"priority,omitempty"`
+	Priority           int           `json:"priority"`
 	AssociatedSubnetID string        `json:"associatedSubnetID,omitempty"`
-	Mtu                int           `json:"mtu,omitempty"`
+	Mtu                int           `json:"mtu"`
 	AuthenticationKey  string        `json:"authenticationKey,omitempty"`
 	AuthenticationType string        `json:"authenticationType,omitempty"`
 	ExternalID         string        `json:"externalID,omitempty"`

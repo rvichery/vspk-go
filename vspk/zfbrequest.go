@@ -63,7 +63,7 @@ type ZFBRequest struct {
 	ZFBApprovalStatus        string  `json:"ZFBApprovalStatus,omitempty"`
 	ZFBBootstrapEnabled      bool    `json:"ZFBBootstrapEnabled"`
 	ZFBInfo                  string  `json:"ZFBInfo,omitempty"`
-	ZFBRequestRetryTimer     int     `json:"ZFBRequestRetryTimer,omitempty"`
+	ZFBRequestRetryTimer     int     `json:"ZFBRequestRetryTimer"`
 	SKU                      string  `json:"SKU,omitempty"`
 	IPAddress                string  `json:"IPAddress,omitempty"`
 	CPUType                  string  `json:"CPUType,omitempty"`

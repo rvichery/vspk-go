@@ -80,7 +80,7 @@ type EgressACLEntryTemplate struct {
 	PolicyState                        string `json:"policyState,omitempty"`
 	DomainName                         string `json:"domainName,omitempty"`
 	SourcePort                         string `json:"sourcePort,omitempty"`
-	Priority                           int    `json:"priority,omitempty"`
+	Priority                           int    `json:"priority"`
 	Protocol                           string `json:"protocol,omitempty"`
 	AssociatedL7ApplicationSignatureID string `json:"associatedL7ApplicationSignatureID,omitempty"`
 	AssociatedLiveEntityID             string `json:"associatedLiveEntityID,omitempty"`

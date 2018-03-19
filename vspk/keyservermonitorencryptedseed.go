@@ -59,14 +59,14 @@ type KeyServerMonitorEncryptedSeed struct {
 	ParentID                                   string `json:"parentID,omitempty"`
 	ParentType                                 string `json:"parentType,omitempty"`
 	Owner                                      string `json:"owner,omitempty"`
-	SEKCreationTime                            int    `json:"SEKCreationTime,omitempty"`
+	SEKCreationTime                            int    `json:"SEKCreationTime"`
 	LastUpdatedBy                              string `json:"lastUpdatedBy,omitempty"`
-	KeyServerCertificateSerialNumber           int    `json:"keyServerCertificateSerialNumber,omitempty"`
+	KeyServerCertificateSerialNumber           int    `json:"keyServerCertificateSerialNumber"`
 	EnterpriseSecuredDataID                    string `json:"enterpriseSecuredDataID,omitempty"`
 	EntityScope                                string `json:"entityScope,omitempty"`
-	AssociatedKeyServerMonitorSEKCreationTime  int    `json:"associatedKeyServerMonitorSEKCreationTime,omitempty"`
+	AssociatedKeyServerMonitorSEKCreationTime  int    `json:"associatedKeyServerMonitorSEKCreationTime"`
 	AssociatedKeyServerMonitorSEKID            string `json:"associatedKeyServerMonitorSEKID,omitempty"`
-	AssociatedKeyServerMonitorSeedCreationTime int    `json:"associatedKeyServerMonitorSeedCreationTime,omitempty"`
+	AssociatedKeyServerMonitorSeedCreationTime int    `json:"associatedKeyServerMonitorSeedCreationTime"`
 	AssociatedKeyServerMonitorSeedID           string `json:"associatedKeyServerMonitorSeedID,omitempty"`
 	ExternalID                                 string `json:"externalID,omitempty"`
 }

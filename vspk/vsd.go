@@ -62,7 +62,7 @@ type VSD struct {
 	URL                         string        `json:"URL,omitempty"`
 	Name                        string        `json:"name,omitempty"`
 	ManagementIP                string        `json:"managementIP,omitempty"`
-	LastStateChange             int           `json:"lastStateChange,omitempty"`
+	LastStateChange             int           `json:"lastStateChange"`
 	LastUpdatedBy               string        `json:"lastUpdatedBy,omitempty"`
 	Address                     string        `json:"address,omitempty"`
 	PeakCPUUsage                float64       `json:"peakCPUUsage,omitempty"`
@@ -72,7 +72,7 @@ type VSD struct {
 	Messages                    []interface{} `json:"messages,omitempty"`
 	Disks                       []interface{} `json:"disks,omitempty"`
 	AlreadyMarkedForUnavailable bool          `json:"alreadyMarkedForUnavailable"`
-	UnavailableTimestamp        int           `json:"unavailableTimestamp,omitempty"`
+	UnavailableTimestamp        int           `json:"unavailableTimestamp"`
 	EntityScope                 string        `json:"entityScope,omitempty"`
 	Location                    string        `json:"location,omitempty"`
 	Mode                        string        `json:"mode,omitempty"`

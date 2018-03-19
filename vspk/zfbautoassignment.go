@@ -65,7 +65,7 @@ type ZFBAutoAssignment struct {
 	LastUpdatedBy            string        `json:"lastUpdatedBy,omitempty"`
 	Description              string        `json:"description,omitempty"`
 	EntityScope              string        `json:"entityScope,omitempty"`
-	Priority                 int           `json:"priority,omitempty"`
+	Priority                 int           `json:"priority"`
 	AssociatedEnterpriseID   string        `json:"associatedEnterpriseID,omitempty"`
 	AssociatedEnterpriseName string        `json:"associatedEnterpriseName,omitempty"`
 	ExternalID               string        `json:"externalID,omitempty"`

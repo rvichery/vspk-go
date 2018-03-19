@@ -60,11 +60,11 @@ type BGPProfile struct {
 	ParentType                      string `json:"parentType,omitempty"`
 	Owner                           string `json:"owner,omitempty"`
 	Name                            string `json:"name,omitempty"`
-	DampeningHalfLife               int    `json:"dampeningHalfLife,omitempty"`
-	DampeningMaxSuppress            int    `json:"dampeningMaxSuppress,omitempty"`
+	DampeningHalfLife               int    `json:"dampeningHalfLife"`
+	DampeningMaxSuppress            int    `json:"dampeningMaxSuppress"`
 	DampeningName                   string `json:"dampeningName,omitempty"`
-	DampeningReuse                  int    `json:"dampeningReuse,omitempty"`
-	DampeningSuppress               int    `json:"dampeningSuppress,omitempty"`
+	DampeningReuse                  int    `json:"dampeningReuse"`
+	DampeningSuppress               int    `json:"dampeningSuppress"`
 	Description                     string `json:"description,omitempty"`
 	EntityScope                     string `json:"entityScope,omitempty"`
 	AssociatedExportRoutingPolicyID string `json:"associatedExportRoutingPolicyID,omitempty"`

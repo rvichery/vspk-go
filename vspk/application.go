@@ -61,7 +61,7 @@ type Application struct {
 	Owner                              string  `json:"owner,omitempty"`
 	DSCP                               string  `json:"DSCP,omitempty"`
 	Name                               string  `json:"name,omitempty"`
-	Bandwidth                          int     `json:"bandwidth,omitempty"`
+	Bandwidth                          int     `json:"bandwidth"`
 	LastUpdatedBy                      string  `json:"lastUpdatedBy,omitempty"`
 	ReadOnly                           bool    `json:"readOnly"`
 	PerformanceMonitorType             string  `json:"performanceMonitorType,omitempty"`
@@ -69,14 +69,14 @@ type Application struct {
 	DestinationIP                      string  `json:"destinationIP,omitempty"`
 	DestinationPort                    string  `json:"destinationPort,omitempty"`
 	EnablePPS                          bool    `json:"enablePPS"`
-	OneWayDelay                        int     `json:"oneWayDelay,omitempty"`
-	OneWayJitter                       int     `json:"oneWayJitter,omitempty"`
+	OneWayDelay                        int     `json:"oneWayDelay"`
+	OneWayJitter                       int     `json:"oneWayJitter"`
 	OneWayLoss                         float64 `json:"oneWayLoss,omitempty"`
 	EntityScope                        string  `json:"entityScope,omitempty"`
 	PostClassificationPath             string  `json:"postClassificationPath,omitempty"`
 	SourceIP                           string  `json:"sourceIP,omitempty"`
 	SourcePort                         string  `json:"sourcePort,omitempty"`
-	AppId                              int     `json:"appId,omitempty"`
+	AppId                              int     `json:"appId"`
 	OptimizePathSelection              string  `json:"optimizePathSelection,omitempty"`
 	PreClassificationPath              string  `json:"preClassificationPath,omitempty"`
 	Protocol                           string  `json:"protocol,omitempty"`

@@ -59,7 +59,7 @@ type VLAN struct {
 	ParentID                              string `json:"parentID,omitempty"`
 	ParentType                            string `json:"parentType,omitempty"`
 	Owner                                 string `json:"owner,omitempty"`
-	Value                                 int    `json:"value,omitempty"`
+	Value                                 int    `json:"value"`
 	LastUpdatedBy                         string `json:"lastUpdatedBy,omitempty"`
 	GatewayID                             string `json:"gatewayID,omitempty"`
 	Readonly                              bool   `json:"readonly"`

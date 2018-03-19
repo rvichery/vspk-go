@@ -90,7 +90,7 @@ type IngressAdvFwdEntryTemplate struct {
 	SourcePort              string `json:"sourcePort,omitempty"`
 	UplinkPreference        string `json:"uplinkPreference,omitempty"`
 	AppType                 string `json:"appType,omitempty"`
-	Priority                int    `json:"priority,omitempty"`
+	Priority                int    `json:"priority"`
 	Protocol                string `json:"protocol,omitempty"`
 	IsSLAAware              bool   `json:"isSLAAware"`
 	AssociatedApplicationID string `json:"associatedApplicationID,omitempty"`

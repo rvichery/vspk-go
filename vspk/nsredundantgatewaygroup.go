@@ -67,8 +67,8 @@ type NSRedundantGatewayGroup struct {
 	GatewayPeer2AutodiscoveredGatewayID string        `json:"gatewayPeer2AutodiscoveredGatewayID,omitempty"`
 	GatewayPeer2ID                      string        `json:"gatewayPeer2ID,omitempty"`
 	GatewayPeer2Name                    string        `json:"gatewayPeer2Name,omitempty"`
-	HeartbeatInterval                   int           `json:"heartbeatInterval,omitempty"`
-	HeartbeatVLANID                     int           `json:"heartbeatVLANID,omitempty"`
+	HeartbeatInterval                   int           `json:"heartbeatInterval"`
+	HeartbeatVLANID                     int           `json:"heartbeatVLANID"`
 	RedundancyPortIDs                   []interface{} `json:"redundancyPortIDs,omitempty"`
 	RedundantGatewayStatus              string        `json:"redundantGatewayStatus,omitempty"`
 	PermittedAction                     string        `json:"permittedAction,omitempty"`
@@ -76,7 +76,7 @@ type NSRedundantGatewayGroup struct {
 	Description                         string        `json:"description,omitempty"`
 	EnterpriseID                        string        `json:"enterpriseID,omitempty"`
 	EntityScope                         string        `json:"entityScope,omitempty"`
-	ConsecutiveFailuresCount            int           `json:"consecutiveFailuresCount,omitempty"`
+	ConsecutiveFailuresCount            int           `json:"consecutiveFailuresCount"`
 	ExternalID                          string        `json:"externalID,omitempty"`
 }
 

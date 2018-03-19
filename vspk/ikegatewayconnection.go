@@ -63,14 +63,14 @@ type IKEGatewayConnection struct {
 	NSGIdentifierType                string `json:"NSGIdentifierType,omitempty"`
 	NSGRole                          string `json:"NSGRole,omitempty"`
 	Name                             string `json:"name,omitempty"`
-	Mark                             int    `json:"mark,omitempty"`
+	Mark                             int    `json:"mark"`
 	LastUpdatedBy                    string `json:"lastUpdatedBy,omitempty"`
-	Sequence                         int    `json:"sequence,omitempty"`
+	Sequence                         int    `json:"sequence"`
 	AllowAnySubnet                   bool   `json:"allowAnySubnet"`
 	UnencryptedPSK                   string `json:"unencryptedPSK,omitempty"`
 	EntityScope                      string `json:"entityScope,omitempty"`
 	PortVLANName                     string `json:"portVLANName,omitempty"`
-	Priority                         int    `json:"priority,omitempty"`
+	Priority                         int    `json:"priority"`
 	AssociatedIKEAuthenticationID    string `json:"associatedIKEAuthenticationID,omitempty"`
 	AssociatedIKEAuthenticationType  string `json:"associatedIKEAuthenticationType,omitempty"`
 	AssociatedIKEEncryptionProfileID string `json:"associatedIKEEncryptionProfileID,omitempty"`

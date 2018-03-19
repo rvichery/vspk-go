@@ -61,13 +61,13 @@ type OSPFArea struct {
 	Owner                       string        `json:"owner,omitempty"`
 	LastUpdatedBy               string        `json:"lastUpdatedBy,omitempty"`
 	RedistributeExternalEnabled bool          `json:"redistributeExternalEnabled"`
-	DefaultMetric               int           `json:"defaultMetric,omitempty"`
+	DefaultMetric               int           `json:"defaultMetric"`
 	DefaultOriginateOption      string        `json:"defaultOriginateOption,omitempty"`
 	Description                 string        `json:"description,omitempty"`
 	AggregateAreaRange          []interface{} `json:"aggregateAreaRange,omitempty"`
 	AggregateAreaRangeNSSA      []interface{} `json:"aggregateAreaRangeNSSA,omitempty"`
 	EntityScope                 string        `json:"entityScope,omitempty"`
-	AreaID                      int           `json:"areaID,omitempty"`
+	AreaID                      int           `json:"areaID"`
 	AreaType                    string        `json:"areaType,omitempty"`
 	SummariesEnabled            bool          `json:"summariesEnabled"`
 	SuppressAreaRange           []interface{} `json:"suppressAreaRange,omitempty"`

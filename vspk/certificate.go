@@ -60,7 +60,7 @@ type Certificate struct {
 	ParentType   string `json:"parentType,omitempty"`
 	Owner        string `json:"owner,omitempty"`
 	PemEncoded   string `json:"pemEncoded,omitempty"`
-	SerialNumber int    `json:"serialNumber,omitempty"`
+	SerialNumber int    `json:"serialNumber"`
 	EntityScope  string `json:"entityScope,omitempty"`
 	IssuerDN     string `json:"issuerDN,omitempty"`
 	SubjectDN    string `json:"subjectDN,omitempty"`

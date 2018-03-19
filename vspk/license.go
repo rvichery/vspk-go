@@ -59,25 +59,25 @@ type License struct {
 	ParentID                    string  `json:"parentID,omitempty"`
 	ParentType                  string  `json:"parentType,omitempty"`
 	Owner                       string  `json:"owner,omitempty"`
-	MajorRelease                int     `json:"majorRelease,omitempty"`
+	MajorRelease                int     `json:"majorRelease"`
 	LastUpdatedBy               string  `json:"lastUpdatedBy,omitempty"`
 	AdditionalSupportedVersions string  `json:"additionalSupportedVersions,omitempty"`
 	Phone                       string  `json:"phone,omitempty"`
 	License                     string  `json:"license,omitempty"`
 	LicenseEncryption           string  `json:"licenseEncryption,omitempty"`
 	LicenseEntities             string  `json:"licenseEntities,omitempty"`
-	LicenseID                   int     `json:"licenseID,omitempty"`
+	LicenseID                   int     `json:"licenseID"`
 	LicenseType                 string  `json:"licenseType,omitempty"`
-	MinorRelease                int     `json:"minorRelease,omitempty"`
+	MinorRelease                int     `json:"minorRelease"`
 	Zip                         string  `json:"zip,omitempty"`
 	City                        string  `json:"city,omitempty"`
-	AllowedAVRSGsCount          int     `json:"allowedAVRSGsCount,omitempty"`
-	AllowedAVRSsCount           int     `json:"allowedAVRSsCount,omitempty"`
-	AllowedCPEsCount            int     `json:"allowedCPEsCount,omitempty"`
-	AllowedNICsCount            int     `json:"allowedNICsCount,omitempty"`
-	AllowedVMsCount             int     `json:"allowedVMsCount,omitempty"`
-	AllowedVRSGsCount           int     `json:"allowedVRSGsCount,omitempty"`
-	AllowedVRSsCount            int     `json:"allowedVRSsCount,omitempty"`
+	AllowedAVRSGsCount          int     `json:"allowedAVRSGsCount"`
+	AllowedAVRSsCount           int     `json:"allowedAVRSsCount"`
+	AllowedCPEsCount            int     `json:"allowedCPEsCount"`
+	AllowedNICsCount            int     `json:"allowedNICsCount"`
+	AllowedVMsCount             int     `json:"allowedVMsCount"`
+	AllowedVRSGsCount           int     `json:"allowedVRSGsCount"`
+	AllowedVRSsCount            int     `json:"allowedVRSsCount"`
 	Email                       string  `json:"email,omitempty"`
 	EncryptionMode              bool    `json:"encryptionMode"`
 	UniqueLicenseIdentifier     string  `json:"uniqueLicenseIdentifier,omitempty"`
@@ -92,7 +92,7 @@ type License struct {
 	Street                      string  `json:"street,omitempty"`
 	CustomerKey                 string  `json:"customerKey,omitempty"`
 	ExpirationDate              float64 `json:"expirationDate,omitempty"`
-	ExpiryTimestamp             int     `json:"expiryTimestamp,omitempty"`
+	ExpiryTimestamp             int     `json:"expiryTimestamp"`
 	ExternalID                  string  `json:"externalID,omitempty"`
 }
 

@@ -62,7 +62,7 @@ type BGPNeighbor struct {
 	BFDEnabled                      bool   `json:"BFDEnabled"`
 	Name                            string `json:"name,omitempty"`
 	DampeningEnabled                bool   `json:"dampeningEnabled"`
-	PeerAS                          int    `json:"peerAS,omitempty"`
+	PeerAS                          int    `json:"peerAS"`
 	PeerIP                          string `json:"peerIP,omitempty"`
 	Description                     string `json:"description,omitempty"`
 	Session                         string `json:"session,omitempty"`

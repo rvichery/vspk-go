@@ -66,12 +66,12 @@ type L7applicationsignature struct {
 	Deprecated        bool   `json:"deprecated"`
 	DeprecatedVersion string `json:"deprecatedVersion,omitempty"`
 	Description       string `json:"description,omitempty"`
-	DictionaryVersion int    `json:"dictionaryVersion,omitempty"`
-	SignatureIndex    int    `json:"signatureIndex,omitempty"`
-	Risk              int    `json:"risk,omitempty"`
+	DictionaryVersion int    `json:"dictionaryVersion"`
+	SignatureIndex    int    `json:"signatureIndex"`
+	Risk              int    `json:"risk"`
 	PluginName        string `json:"pluginName,omitempty"`
 	SoftwareFlags     string `json:"softwareFlags,omitempty"`
-	Productivity      int    `json:"productivity,omitempty"`
+	Productivity      int    `json:"productivity"`
 	Guidstring        string `json:"guidstring,omitempty"`
 }
 

@@ -61,7 +61,7 @@ type KeyServerMember struct {
 	Owner                   string `json:"owner,omitempty"`
 	LastUpdatedBy           string `json:"lastUpdatedBy,omitempty"`
 	PemEncoded              string `json:"pemEncoded,omitempty"`
-	CertificateSerialNumber int    `json:"certificateSerialNumber,omitempty"`
+	CertificateSerialNumber int    `json:"certificateSerialNumber"`
 	EntityScope             string `json:"entityScope,omitempty"`
 	Fqdn                    string `json:"fqdn,omitempty"`
 	IssuerDN                string `json:"issuerDN,omitempty"`

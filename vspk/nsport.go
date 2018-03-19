@@ -77,7 +77,7 @@ type NSPort struct {
 	AssociatedEgressQOSPolicyID string `json:"associatedEgressQOSPolicyID,omitempty"`
 	AssociatedRedundantPortID   string `json:"associatedRedundantPortID,omitempty"`
 	Status                      string `json:"status,omitempty"`
-	Mtu                         int    `json:"mtu,omitempty"`
+	Mtu                         int    `json:"mtu"`
 	ExternalID                  string `json:"externalID,omitempty"`
 }
 

@@ -68,7 +68,7 @@ type DomainFIPAclTemplate struct {
 	EntityScope            string        `json:"entityScope,omitempty"`
 	Entries                []interface{} `json:"entries,omitempty"`
 	PolicyState            string        `json:"policyState,omitempty"`
-	Priority               int           `json:"priority,omitempty"`
+	Priority               int           `json:"priority"`
 	PriorityType           string        `json:"priorityType,omitempty"`
 	AssociatedLiveEntityID string        `json:"associatedLiveEntityID,omitempty"`
 	ExternalID             string        `json:"externalID,omitempty"`

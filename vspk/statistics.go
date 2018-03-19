@@ -59,11 +59,11 @@ type Statistics struct {
 	ParentID           string      `json:"parentID,omitempty"`
 	ParentType         string      `json:"parentType,omitempty"`
 	Owner              string      `json:"owner,omitempty"`
-	Version            int         `json:"version,omitempty"`
-	EndTime            int         `json:"endTime,omitempty"`
-	StartTime          int         `json:"startTime,omitempty"`
+	Version            int         `json:"version"`
+	EndTime            int         `json:"endTime"`
+	StartTime          int         `json:"startTime"`
 	StatsData          interface{} `json:"statsData,omitempty"`
-	NumberOfDataPoints int         `json:"numberOfDataPoints,omitempty"`
+	NumberOfDataPoints int         `json:"numberOfDataPoints"`
 }
 
 // NewStatistics returns a new *Statistics

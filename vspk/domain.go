@@ -60,19 +60,19 @@ type Domain struct {
 	ParentType                      string        `json:"parentType,omitempty"`
 	Owner                           string        `json:"owner,omitempty"`
 	PATEnabled                      string        `json:"PATEnabled,omitempty"`
-	ECMPCount                       int           `json:"ECMPCount,omitempty"`
+	ECMPCount                       int           `json:"ECMPCount"`
 	BGPEnabled                      bool          `json:"BGPEnabled"`
 	DHCPBehavior                    string        `json:"DHCPBehavior,omitempty"`
 	DHCPServerAddress               string        `json:"DHCPServerAddress,omitempty"`
 	FIPUnderlay                     bool          `json:"FIPUnderlay"`
 	DPI                             string        `json:"DPI,omitempty"`
-	LabelID                         int           `json:"labelID,omitempty"`
+	LabelID                         int           `json:"labelID"`
 	BackHaulRouteDistinguisher      string        `json:"backHaulRouteDistinguisher,omitempty"`
 	BackHaulRouteTarget             string        `json:"backHaulRouteTarget,omitempty"`
-	BackHaulServiceID               int           `json:"backHaulServiceID,omitempty"`
+	BackHaulServiceID               int           `json:"backHaulServiceID"`
 	BackHaulSubnetIPAddress         string        `json:"backHaulSubnetIPAddress,omitempty"`
 	BackHaulSubnetMask              string        `json:"backHaulSubnetMask,omitempty"`
-	BackHaulVNID                    int           `json:"backHaulVNID,omitempty"`
+	BackHaulVNID                    int           `json:"backHaulVNID"`
 	MaintenanceMode                 string        `json:"maintenanceMode,omitempty"`
 	Name                            string        `json:"name,omitempty"`
 	LastUpdatedBy                   string        `json:"lastUpdatedBy,omitempty"`
@@ -81,7 +81,7 @@ type Domain struct {
 	SecondaryDHCPServerAddress      string        `json:"secondaryDHCPServerAddress,omitempty"`
 	TemplateID                      string        `json:"templateID,omitempty"`
 	PermittedAction                 string        `json:"permittedAction,omitempty"`
-	ServiceID                       int           `json:"serviceID,omitempty"`
+	ServiceID                       int           `json:"serviceID"`
 	Description                     string        `json:"description,omitempty"`
 	DhcpServerAddresses             []interface{} `json:"dhcpServerAddresses,omitempty"`
 	GlobalRoutingEnabled            bool          `json:"globalRoutingEnabled"`
@@ -90,10 +90,10 @@ type Domain struct {
 	Encryption                      string        `json:"encryption,omitempty"`
 	UnderlayEnabled                 string        `json:"underlayEnabled,omitempty"`
 	EntityScope                     string        `json:"entityScope,omitempty"`
-	LocalAS                         int           `json:"localAS,omitempty"`
+	LocalAS                         int           `json:"localAS"`
 	PolicyChangeStatus              string        `json:"policyChangeStatus,omitempty"`
-	DomainID                        int           `json:"domainID,omitempty"`
-	DomainVLANID                    int           `json:"domainVLANID,omitempty"`
+	DomainID                        int           `json:"domainID"`
+	DomainVLANID                    int           `json:"domainVLANID"`
 	RouteDistinguisher              string        `json:"routeDistinguisher,omitempty"`
 	RouteTarget                     string        `json:"routeTarget,omitempty"`
 	UplinkPreference                string        `json:"uplinkPreference,omitempty"`
@@ -105,7 +105,7 @@ type Domain struct {
 	Stretched                       bool          `json:"stretched"`
 	Multicast                       string        `json:"multicast,omitempty"`
 	TunnelType                      string        `json:"tunnelType,omitempty"`
-	CustomerID                      int           `json:"customerID,omitempty"`
+	CustomerID                      int           `json:"customerID"`
 	ExportRouteTarget               string        `json:"exportRouteTarget,omitempty"`
 	ExternalID                      string        `json:"externalID,omitempty"`
 }

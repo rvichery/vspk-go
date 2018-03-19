@@ -62,7 +62,7 @@ type Enterprise struct {
 	LDAPAuthorizationEnabled               bool          `json:"LDAPAuthorizationEnabled"`
 	LDAPEnabled                            bool          `json:"LDAPEnabled"`
 	BGPEnabled                             bool          `json:"BGPEnabled"`
-	DHCPLeaseInterval                      int           `json:"DHCPLeaseInterval,omitempty"`
+	DHCPLeaseInterval                      int           `json:"DHCPLeaseInterval"`
 	VNFManagementEnabled                   bool          `json:"VNFManagementEnabled"`
 	Name                                   string        `json:"name,omitempty"`
 	LastUpdatedBy                          string        `json:"lastUpdatedBy,omitempty"`
@@ -70,23 +70,23 @@ type Enterprise struct {
 	SendMultiCastListID                    string        `json:"sendMultiCastListID,omitempty"`
 	Description                            string        `json:"description,omitempty"`
 	SharedEnterprise                       bool          `json:"sharedEnterprise"`
-	DictionaryVersion                      int           `json:"dictionaryVersion,omitempty"`
+	DictionaryVersion                      int           `json:"dictionaryVersion"`
 	AllowAdvancedQOSConfiguration          bool          `json:"allowAdvancedQOSConfiguration"`
 	AllowGatewayManagement                 bool          `json:"allowGatewayManagement"`
 	AllowTrustedForwardingClass            bool          `json:"allowTrustedForwardingClass"`
 	AllowedForwardingClasses               []interface{} `json:"allowedForwardingClasses,omitempty"`
-	FloatingIPsQuota                       int           `json:"floatingIPsQuota,omitempty"`
-	FloatingIPsUsed                        int           `json:"floatingIPsUsed,omitempty"`
+	FloatingIPsQuota                       int           `json:"floatingIPsQuota"`
+	FloatingIPsUsed                        int           `json:"floatingIPsUsed"`
 	FlowCollectionEnabled                  string        `json:"flowCollectionEnabled,omitempty"`
 	EnableApplicationPerformanceManagement bool          `json:"enableApplicationPerformanceManagement"`
 	EncryptionManagementMode               string        `json:"encryptionManagementMode,omitempty"`
 	EnterpriseProfileID                    string        `json:"enterpriseProfileID,omitempty"`
 	EntityScope                            string        `json:"entityScope,omitempty"`
-	LocalAS                                int           `json:"localAS,omitempty"`
+	LocalAS                                int           `json:"localAS"`
 	AssociatedEnterpriseSecurityID         string        `json:"associatedEnterpriseSecurityID,omitempty"`
 	AssociatedGroupKeyEncryptionProfileID  string        `json:"associatedGroupKeyEncryptionProfileID,omitempty"`
 	AssociatedKeyServerMonitorID           string        `json:"associatedKeyServerMonitorID,omitempty"`
-	CustomerID                             int           `json:"customerID,omitempty"`
+	CustomerID                             int           `json:"customerID"`
 	AvatarData                             string        `json:"avatarData,omitempty"`
 	AvatarType                             string        `json:"avatarType,omitempty"`
 	ExternalID                             string        `json:"externalID,omitempty"`

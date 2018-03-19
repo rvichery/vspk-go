@@ -59,14 +59,14 @@ type KeyServerMonitor struct {
 	ParentID                           string `json:"parentID,omitempty"`
 	ParentType                         string `json:"parentType,omitempty"`
 	Owner                              string `json:"owner,omitempty"`
-	LastUpdateTime                     int    `json:"lastUpdateTime,omitempty"`
+	LastUpdateTime                     int    `json:"lastUpdateTime"`
 	LastUpdatedBy                      string `json:"lastUpdatedBy,omitempty"`
-	GatewaySecuredDataRecordCount      int    `json:"gatewaySecuredDataRecordCount,omitempty"`
-	KeyserverMonitorEncryptedSEKCount  int    `json:"keyserverMonitorEncryptedSEKCount,omitempty"`
-	KeyserverMonitorEncryptedSeedCount int    `json:"keyserverMonitorEncryptedSeedCount,omitempty"`
-	KeyserverMonitorSEKCount           int    `json:"keyserverMonitorSEKCount,omitempty"`
-	KeyserverMonitorSeedCount          int    `json:"keyserverMonitorSeedCount,omitempty"`
-	EnterpriseSecuredDataRecordCount   int    `json:"enterpriseSecuredDataRecordCount,omitempty"`
+	GatewaySecuredDataRecordCount      int    `json:"gatewaySecuredDataRecordCount"`
+	KeyserverMonitorEncryptedSEKCount  int    `json:"keyserverMonitorEncryptedSEKCount"`
+	KeyserverMonitorEncryptedSeedCount int    `json:"keyserverMonitorEncryptedSeedCount"`
+	KeyserverMonitorSEKCount           int    `json:"keyserverMonitorSEKCount"`
+	KeyserverMonitorSeedCount          int    `json:"keyserverMonitorSeedCount"`
+	EnterpriseSecuredDataRecordCount   int    `json:"enterpriseSecuredDataRecordCount"`
 	EntityScope                        string `json:"entityScope,omitempty"`
 	ExternalID                         string `json:"externalID,omitempty"`
 }

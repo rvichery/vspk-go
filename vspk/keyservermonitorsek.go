@@ -62,10 +62,10 @@ type KeyServerMonitorSEK struct {
 	LastUpdatedBy                      string `json:"lastUpdatedBy,omitempty"`
 	SeedPayloadAuthenticationAlgorithm string `json:"seedPayloadAuthenticationAlgorithm,omitempty"`
 	SeedPayloadEncryptionAlgorithm     string `json:"seedPayloadEncryptionAlgorithm,omitempty"`
-	Lifetime                           int    `json:"lifetime,omitempty"`
+	Lifetime                           int    `json:"lifetime"`
 	EntityScope                        string `json:"entityScope,omitempty"`
-	CreationTime                       int    `json:"creationTime,omitempty"`
-	StartTime                          int    `json:"startTime,omitempty"`
+	CreationTime                       int    `json:"creationTime"`
+	StartTime                          int    `json:"startTime"`
 	ExternalID                         string `json:"externalID,omitempty"`
 }
 

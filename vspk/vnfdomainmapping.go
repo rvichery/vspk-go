@@ -59,7 +59,7 @@ type VNFDomainMapping struct {
 	ParentID                string `json:"parentID,omitempty"`
 	ParentType              string `json:"parentType,omitempty"`
 	Owner                   string `json:"owner,omitempty"`
-	SegmentationID          int    `json:"segmentationID,omitempty"`
+	SegmentationID          int    `json:"segmentationID"`
 	SegmentationType        string `json:"segmentationType,omitempty"`
 	AssociatedNSGatewayID   string `json:"associatedNSGatewayID,omitempty"`
 	AssociatedNSGatewayName string `json:"associatedNSGatewayName,omitempty"`

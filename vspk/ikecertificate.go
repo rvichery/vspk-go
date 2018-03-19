@@ -62,7 +62,7 @@ type IKECertificate struct {
 	PEMEncoded             string  `json:"PEMEncoded,omitempty"`
 	Name                   string  `json:"name,omitempty"`
 	LastUpdatedBy          string  `json:"lastUpdatedBy,omitempty"`
-	SerialNumber           int     `json:"serialNumber,omitempty"`
+	SerialNumber           int     `json:"serialNumber"`
 	Description            string  `json:"description,omitempty"`
 	EntityScope            string  `json:"entityScope,omitempty"`
 	NotAfter               float64 `json:"notAfter,omitempty"`

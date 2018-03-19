@@ -59,14 +59,14 @@ type VNFThresholdPolicy struct {
 	ParentID         string `json:"parentID,omitempty"`
 	ParentType       string `json:"parentType,omitempty"`
 	Owner            string `json:"owner,omitempty"`
-	CPUThreshold     int    `json:"CPUThreshold,omitempty"`
+	CPUThreshold     int    `json:"CPUThreshold"`
 	Name             string `json:"name,omitempty"`
 	Action           string `json:"action,omitempty"`
-	MemoryThreshold  int    `json:"memoryThreshold,omitempty"`
+	MemoryThreshold  int    `json:"memoryThreshold"`
 	Description      string `json:"description,omitempty"`
-	MinOccurrence    int    `json:"minOccurrence,omitempty"`
-	MonitInterval    int    `json:"monitInterval,omitempty"`
-	StorageThreshold int    `json:"storageThreshold,omitempty"`
+	MinOccurrence    int    `json:"minOccurrence"`
+	MonitInterval    int    `json:"monitInterval"`
+	StorageThreshold int    `json:"storageThreshold"`
 }
 
 // NewVNFThresholdPolicy returns a new *VNFThresholdPolicy

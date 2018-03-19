@@ -62,7 +62,7 @@ type NSGateway struct {
 	MACAddress                         string `json:"MACAddress,omitempty"`
 	NATTraversalEnabled                bool   `json:"NATTraversalEnabled"`
 	TCPMSSEnabled                      bool   `json:"TCPMSSEnabled"`
-	TCPMaximumSegmentSize              int    `json:"TCPMaximumSegmentSize,omitempty"`
+	TCPMaximumSegmentSize              int    `json:"TCPMaximumSegmentSize"`
 	BIOSReleaseDate                    string `json:"BIOSReleaseDate,omitempty"`
 	BIOSVersion                        string `json:"BIOSVersion,omitempty"`
 	SKU                                string `json:"SKU,omitempty"`
@@ -74,7 +74,7 @@ type NSGateway struct {
 	UUID                               string `json:"UUID,omitempty"`
 	Name                               string `json:"name,omitempty"`
 	Family                             string `json:"family,omitempty"`
-	LastConfigurationReloadTimestamp   int    `json:"lastConfigurationReloadTimestamp,omitempty"`
+	LastConfigurationReloadTimestamp   int    `json:"lastConfigurationReloadTimestamp"`
 	LastUpdatedBy                      string `json:"lastUpdatedBy,omitempty"`
 	DatapathID                         string `json:"datapathID,omitempty"`
 	Patches                            string `json:"patches,omitempty"`
@@ -93,8 +93,8 @@ type NSGateway struct {
 	LocationID                         string `json:"locationID,omitempty"`
 	ConfigurationReloadState           string `json:"configurationReloadState,omitempty"`
 	ConfigurationStatus                string `json:"configurationStatus,omitempty"`
-	ControlTrafficCOSValue             int    `json:"controlTrafficCOSValue,omitempty"`
-	ControlTrafficDSCPValue            int    `json:"controlTrafficDSCPValue,omitempty"`
+	ControlTrafficCOSValue             int    `json:"controlTrafficCOSValue"`
+	ControlTrafficDSCPValue            int    `json:"controlTrafficDSCPValue"`
 	BootstrapID                        string `json:"bootstrapID,omitempty"`
 	BootstrapStatus                    string `json:"bootstrapStatus,omitempty"`
 	OperationMode                      string `json:"operationMode,omitempty"`

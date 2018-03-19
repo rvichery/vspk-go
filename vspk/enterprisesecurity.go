@@ -60,8 +60,8 @@ type EnterpriseSecurity struct {
 	ParentType              string `json:"parentType,omitempty"`
 	Owner                   string `json:"owner,omitempty"`
 	LastUpdatedBy           string `json:"lastUpdatedBy,omitempty"`
-	GatewaySecurityRevision int    `json:"gatewaySecurityRevision,omitempty"`
-	Revision                int    `json:"revision,omitempty"`
+	GatewaySecurityRevision int    `json:"gatewaySecurityRevision"`
+	Revision                int    `json:"revision"`
 	EnterpriseID            string `json:"enterpriseID,omitempty"`
 	EntityScope             string `json:"entityScope,omitempty"`
 	ExternalID              string `json:"externalID,omitempty"`

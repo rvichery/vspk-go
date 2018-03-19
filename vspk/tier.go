@@ -59,13 +59,13 @@ type Tier struct {
 	ParentID           string `json:"parentID,omitempty"`
 	ParentType         string `json:"parentType,omitempty"`
 	Owner              string `json:"owner,omitempty"`
-	PacketCount        int    `json:"packetCount,omitempty"`
+	PacketCount        int    `json:"packetCount"`
 	LastUpdatedBy      string `json:"lastUpdatedBy,omitempty"`
 	TierType           string `json:"tierType,omitempty"`
-	Timeout            int    `json:"timeout,omitempty"`
+	Timeout            int    `json:"timeout"`
 	EntityScope        string `json:"entityScope,omitempty"`
-	DownThresholdCount int    `json:"downThresholdCount,omitempty"`
-	ProbeInterval      int    `json:"probeInterval,omitempty"`
+	DownThresholdCount int    `json:"downThresholdCount"`
+	ProbeInterval      int    `json:"probeInterval"`
 	ExternalID         string `json:"externalID,omitempty"`
 }
 

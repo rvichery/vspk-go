@@ -59,9 +59,9 @@ type UserContext struct {
 	ParentID               string `json:"parentID,omitempty"`
 	ParentType             string `json:"parentType,omitempty"`
 	Owner                  string `json:"owner,omitempty"`
-	AARFlowStatsInterval   int    `json:"AARFlowStatsInterval,omitempty"`
-	AARProbeStatsInterval  int    `json:"AARProbeStatsInterval,omitempty"`
-	VSSStatsInterval       int    `json:"VSSStatsInterval,omitempty"`
+	AARFlowStatsInterval   int    `json:"AARFlowStatsInterval"`
+	AARProbeStatsInterval  int    `json:"AARProbeStatsInterval"`
+	VSSStatsInterval       int    `json:"VSSStatsInterval"`
 	FlowCollectionEnabled  bool   `json:"flowCollectionEnabled"`
 	StatisticsEnabled      bool   `json:"statisticsEnabled"`
 	StatsTSDBServerAddress string `json:"statsTSDBServerAddress,omitempty"`

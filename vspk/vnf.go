@@ -61,14 +61,14 @@ type VNF struct {
 	Owner                          string        `json:"owner,omitempty"`
 	VNFDescriptorID                string        `json:"VNFDescriptorID,omitempty"`
 	VNFDescriptorName              string        `json:"VNFDescriptorName,omitempty"`
-	CPUCount                       int           `json:"CPUCount,omitempty"`
+	CPUCount                       int           `json:"CPUCount"`
 	NSGName                        string        `json:"NSGName,omitempty"`
 	NSGSystemID                    string        `json:"NSGSystemID,omitempty"`
 	NSGatewayID                    string        `json:"NSGatewayID,omitempty"`
 	Name                           string        `json:"name,omitempty"`
 	TaskState                      string        `json:"taskState,omitempty"`
 	LastKnownError                 string        `json:"lastKnownError,omitempty"`
-	MemoryMB                       int           `json:"memoryMB,omitempty"`
+	MemoryMB                       int           `json:"memoryMB"`
 	Vendor                         string        `json:"vendor,omitempty"`
 	Description                    string        `json:"description,omitempty"`
 	MetadataID                     string        `json:"metadataID,omitempty"`
@@ -78,7 +78,7 @@ type VNF struct {
 	AssociatedVNFMetadataID        string        `json:"associatedVNFMetadataID,omitempty"`
 	AssociatedVNFThresholdPolicyID string        `json:"associatedVNFThresholdPolicyID,omitempty"`
 	Status                         string        `json:"status,omitempty"`
-	StorageGB                      int           `json:"storageGB,omitempty"`
+	StorageGB                      int           `json:"storageGB"`
 	Type                           string        `json:"type,omitempty"`
 }
 

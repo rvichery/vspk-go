@@ -64,15 +64,15 @@ type TCA struct {
 	TargetPolicyGroupID string `json:"targetPolicyGroupID,omitempty"`
 	LastUpdatedBy       string `json:"lastUpdatedBy,omitempty"`
 	Action              string `json:"action,omitempty"`
-	Period              int    `json:"period,omitempty"`
+	Period              int    `json:"period"`
 	Description         string `json:"description,omitempty"`
 	Metric              string `json:"metric,omitempty"`
-	Threshold           int    `json:"threshold,omitempty"`
-	ThrottleTime        int    `json:"throttleTime,omitempty"`
+	Threshold           int    `json:"threshold"`
+	ThrottleTime        int    `json:"throttleTime"`
 	Disable             bool   `json:"disable"`
 	DisplayStatus       string `json:"displayStatus,omitempty"`
 	EntityScope         string `json:"entityScope,omitempty"`
-	Count               int    `json:"count,omitempty"`
+	Count               int    `json:"count"`
 	Status              bool   `json:"status"`
 	ExternalID          string `json:"externalID,omitempty"`
 	Type                string `json:"type,omitempty"`

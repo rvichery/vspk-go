@@ -63,7 +63,7 @@ type NetworkLayout struct {
 	ServiceType         string `json:"serviceType,omitempty"`
 	EntityScope         string `json:"entityScope,omitempty"`
 	RouteReflectorIP    string `json:"routeReflectorIP,omitempty"`
-	AutonomousSystemNum int    `json:"autonomousSystemNum,omitempty"`
+	AutonomousSystemNum int    `json:"autonomousSystemNum"`
 	ExternalID          string `json:"externalID,omitempty"`
 }
 

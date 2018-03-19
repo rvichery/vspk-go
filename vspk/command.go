@@ -61,7 +61,7 @@ type Command struct {
 	Owner               string `json:"owner,omitempty"`
 	LastUpdatedBy       string `json:"lastUpdatedBy,omitempty"`
 	DetailedStatus      string `json:"detailedStatus,omitempty"`
-	DetailedStatusCode  int    `json:"detailedStatusCode,omitempty"`
+	DetailedStatusCode  int    `json:"detailedStatusCode"`
 	EntityScope         string `json:"entityScope,omitempty"`
 	Command             string `json:"command,omitempty"`
 	CommandInformation  string `json:"commandInformation,omitempty"`

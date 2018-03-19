@@ -60,7 +60,7 @@ type RedundantPort struct {
 	ParentType                  string `json:"parentType,omitempty"`
 	Owner                       string `json:"owner,omitempty"`
 	VLANRange                   string `json:"VLANRange,omitempty"`
-	MTU                         int    `json:"MTU,omitempty"`
+	MTU                         int    `json:"MTU"`
 	Name                        string `json:"name,omitempty"`
 	LastUpdatedBy               string `json:"lastUpdatedBy,omitempty"`
 	PermittedAction             string `json:"permittedAction,omitempty"`

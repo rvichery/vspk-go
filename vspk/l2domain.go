@@ -71,11 +71,11 @@ type L2Domain struct {
 	GatewayMACAddress                 string `json:"gatewayMACAddress,omitempty"`
 	Address                           string `json:"address,omitempty"`
 	TemplateID                        string `json:"templateID,omitempty"`
-	ServiceID                         int    `json:"serviceID,omitempty"`
+	ServiceID                         int    `json:"serviceID"`
 	Description                       string `json:"description,omitempty"`
 	Netmask                           string `json:"netmask,omitempty"`
 	FlowCollectionEnabled             string `json:"flowCollectionEnabled,omitempty"`
-	VnId                              int    `json:"vnId,omitempty"`
+	VnId                              int    `json:"vnId"`
 	Encryption                        string `json:"encryption,omitempty"`
 	EntityScope                       string `json:"entityScope,omitempty"`
 	EntityState                       string `json:"entityState,omitempty"`

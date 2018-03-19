@@ -66,11 +66,11 @@ type AllAlarm struct {
 	Reason             string `json:"reason,omitempty"`
 	Description        string `json:"description,omitempty"`
 	Severity           string `json:"severity,omitempty"`
-	Timestamp          int    `json:"timestamp,omitempty"`
+	Timestamp          int    `json:"timestamp"`
 	EnterpriseID       string `json:"enterpriseID,omitempty"`
 	EntityScope        string `json:"entityScope,omitempty"`
-	ErrorCondition     int    `json:"errorCondition,omitempty"`
-	NumberOfOccurances int    `json:"numberOfOccurances,omitempty"`
+	ErrorCondition     int    `json:"errorCondition"`
+	NumberOfOccurances int    `json:"numberOfOccurances"`
 	ExternalID         string `json:"externalID,omitempty"`
 }
 

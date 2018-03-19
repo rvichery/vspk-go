@@ -72,11 +72,11 @@ type Zone struct {
 	FlowCollectionEnabled           string `json:"flowCollectionEnabled,omitempty"`
 	Encryption                      string `json:"encryption,omitempty"`
 	EntityScope                     string `json:"entityScope,omitempty"`
-	PolicyGroupID                   int    `json:"policyGroupID,omitempty"`
+	PolicyGroupID                   int    `json:"policyGroupID"`
 	AssociatedMulticastChannelMapID string `json:"associatedMulticastChannelMapID,omitempty"`
 	PublicZone                      bool   `json:"publicZone"`
 	Multicast                       string `json:"multicast,omitempty"`
-	NumberOfHostsInSubnets          int    `json:"numberOfHostsInSubnets,omitempty"`
+	NumberOfHostsInSubnets          int    `json:"numberOfHostsInSubnets"`
 	ExternalID                      string `json:"externalID,omitempty"`
 	DynamicIpv6Address              bool   `json:"dynamicIpv6Address"`
 }

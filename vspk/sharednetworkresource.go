@@ -59,11 +59,11 @@ type SharedNetworkResource struct {
 	ParentID                    string `json:"parentID,omitempty"`
 	ParentType                  string `json:"parentType,omitempty"`
 	Owner                       string `json:"owner,omitempty"`
-	ECMPCount                   int    `json:"ECMPCount,omitempty"`
+	ECMPCount                   int    `json:"ECMPCount"`
 	DHCPManaged                 bool   `json:"DHCPManaged"`
 	BackHaulRouteDistinguisher  string `json:"backHaulRouteDistinguisher,omitempty"`
 	BackHaulRouteTarget         string `json:"backHaulRouteTarget,omitempty"`
-	BackHaulVNID                int    `json:"backHaulVNID,omitempty"`
+	BackHaulVNID                int    `json:"backHaulVNID"`
 	Name                        string `json:"name,omitempty"`
 	LastUpdatedBy               string `json:"lastUpdatedBy,omitempty"`
 	Gateway                     string `json:"gateway,omitempty"`
@@ -74,7 +74,7 @@ type SharedNetworkResource struct {
 	Description                 string `json:"description,omitempty"`
 	Netmask                     string `json:"netmask,omitempty"`
 	SharedResourceParentID      string `json:"sharedResourceParentID,omitempty"`
-	VnID                        int    `json:"vnID,omitempty"`
+	VnID                        int    `json:"vnID"`
 	Underlay                    bool   `json:"underlay"`
 	EntityScope                 string `json:"entityScope,omitempty"`
 	DomainRouteDistinguisher    string `json:"domainRouteDistinguisher,omitempty"`

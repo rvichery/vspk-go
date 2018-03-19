@@ -61,17 +61,17 @@ type PerformanceMonitor struct {
 	Owner                 string        `json:"owner,omitempty"`
 	Name                  string        `json:"name,omitempty"`
 	LastUpdatedBy         string        `json:"lastUpdatedBy,omitempty"`
-	PayloadSize           int           `json:"payloadSize,omitempty"`
+	PayloadSize           int           `json:"payloadSize"`
 	ReadOnly              bool          `json:"readOnly"`
 	ServiceClass          string        `json:"serviceClass,omitempty"`
 	Description           string        `json:"description,omitempty"`
 	DestinationTargetList []interface{} `json:"destinationTargetList,omitempty"`
-	Timeout               int           `json:"timeout,omitempty"`
-	Interval              int           `json:"interval,omitempty"`
+	Timeout               int           `json:"timeout"`
+	Interval              int           `json:"interval"`
 	EntityScope           string        `json:"entityScope,omitempty"`
-	HoldDownTimer         int           `json:"holdDownTimer,omitempty"`
+	HoldDownTimer         int           `json:"holdDownTimer"`
 	ProbeType             string        `json:"probeType,omitempty"`
-	NumberOfPackets       int           `json:"numberOfPackets,omitempty"`
+	NumberOfPackets       int           `json:"numberOfPackets"`
 	ExternalID            string        `json:"externalID,omitempty"`
 }
 

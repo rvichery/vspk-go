@@ -60,10 +60,10 @@ type BulkStatistics struct {
 	ParentType         string        `json:"parentType,omitempty"`
 	Owner              string        `json:"owner,omitempty"`
 	Data               []interface{} `json:"data,omitempty"`
-	Version            int           `json:"version,omitempty"`
-	EndTime            int           `json:"endTime,omitempty"`
-	StartTime          int           `json:"startTime,omitempty"`
-	NumberOfDataPoints int           `json:"numberOfDataPoints,omitempty"`
+	Version            int           `json:"version"`
+	EndTime            int           `json:"endTime"`
+	StartTime          int           `json:"startTime"`
+	NumberOfDataPoints int           `json:"numberOfDataPoints"`
 }
 
 // NewBulkStatistics returns a new *BulkStatistics

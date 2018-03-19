@@ -65,7 +65,7 @@ type BRConnection struct {
 	AdvertisementCriteria string `json:"advertisementCriteria,omitempty"`
 	Netmask               string `json:"netmask,omitempty"`
 	Mode                  string `json:"mode,omitempty"`
-	UplinkID              int    `json:"uplinkID,omitempty"`
+	UplinkID              int    `json:"uplinkID"`
 }
 
 // NewBRConnection returns a new *BRConnection

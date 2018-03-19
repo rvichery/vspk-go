@@ -68,9 +68,9 @@ type BootstrapActivation struct {
 	EntityScope      string `json:"entityScope,omitempty"`
 	ConfigURL        string `json:"configURL,omitempty"`
 	TpmOwnerPassword string `json:"tpmOwnerPassword,omitempty"`
-	TpmState         int    `json:"tpmState,omitempty"`
+	TpmState         int    `json:"tpmState"`
 	SrkPassword      string `json:"srkPassword,omitempty"`
-	VsdTime          int    `json:"vsdTime,omitempty"`
+	VsdTime          int    `json:"vsdTime"`
 	Csr              string `json:"csr,omitempty"`
 	Status           string `json:"status,omitempty"`
 	AutoBootstrap    bool   `json:"autoBootstrap"`

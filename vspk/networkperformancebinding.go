@@ -60,7 +60,7 @@ type NetworkPerformanceBinding struct {
 	ParentType                     string `json:"parentType,omitempty"`
 	Owner                          string `json:"owner,omitempty"`
 	ReadOnly                       bool   `json:"readOnly"`
-	Priority                       int    `json:"priority,omitempty"`
+	Priority                       int    `json:"priority"`
 	AssociatedNetworkMeasurementID string `json:"associatedNetworkMeasurementID,omitempty"`
 }
 

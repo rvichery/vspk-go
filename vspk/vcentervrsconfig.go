@@ -65,14 +65,14 @@ type VCenterVRSConfig struct {
 	DataDNS2                         string `json:"dataDNS2,omitempty"`
 	DataGateway                      string `json:"dataGateway,omitempty"`
 	DataNetworkPortgroup             string `json:"dataNetworkPortgroup,omitempty"`
-	DatapathSyncTimeout              int    `json:"datapathSyncTimeout,omitempty"`
+	DatapathSyncTimeout              int    `json:"datapathSyncTimeout"`
 	SecondaryNuageController         string `json:"secondaryNuageController,omitempty"`
 	GenericSplitActivation           bool   `json:"genericSplitActivation"`
 	SeparateDataNetwork              bool   `json:"separateDataNetwork"`
 	Personality                      string `json:"personality,omitempty"`
 	MetadataServerIP                 string `json:"metadataServerIP,omitempty"`
-	MetadataServerListenPort         int    `json:"metadataServerListenPort,omitempty"`
-	MetadataServerPort               int    `json:"metadataServerPort,omitempty"`
+	MetadataServerListenPort         int    `json:"metadataServerListenPort"`
+	MetadataServerPort               int    `json:"metadataServerPort"`
 	MetadataServiceEnabled           bool   `json:"metadataServiceEnabled"`
 	NetworkUplinkInterface           string `json:"networkUplinkInterface,omitempty"`
 	NetworkUplinkInterfaceGateway    string `json:"networkUplinkInterfaceGateway,omitempty"`
@@ -88,11 +88,11 @@ type VCenterVRSConfig struct {
 	SiteId                           string `json:"siteId,omitempty"`
 	AllowDataDHCP                    bool   `json:"allowDataDHCP"`
 	AllowMgmtDHCP                    bool   `json:"allowMgmtDHCP"`
-	FlowEvictionThreshold            int    `json:"flowEvictionThreshold,omitempty"`
+	FlowEvictionThreshold            int    `json:"flowEvictionThreshold"`
 	VmNetworkPortgroup               string `json:"vmNetworkPortgroup,omitempty"`
 	EntityScope                      string `json:"entityScope,omitempty"`
 	PortgroupMetadata                bool   `json:"portgroupMetadata"`
-	NovaClientVersion                int    `json:"novaClientVersion,omitempty"`
+	NovaClientVersion                int    `json:"novaClientVersion"`
 	NovaMetadataServiceAuthUrl       string `json:"novaMetadataServiceAuthUrl,omitempty"`
 	NovaMetadataServiceEndpoint      string `json:"novaMetadataServiceEndpoint,omitempty"`
 	NovaMetadataServicePassword      string `json:"novaMetadataServicePassword,omitempty"`
@@ -108,7 +108,7 @@ type VCenterVRSConfig struct {
 	StaticRouteNetmask               string `json:"staticRouteNetmask,omitempty"`
 	NtpServer1                       string `json:"ntpServer1,omitempty"`
 	NtpServer2                       string `json:"ntpServer2,omitempty"`
-	Mtu                              int    `json:"mtu,omitempty"`
+	Mtu                              int    `json:"mtu"`
 	MultiVMSsupport                  bool   `json:"multiVMSsupport"`
 	MulticastReceiveInterface        string `json:"multicastReceiveInterface,omitempty"`
 	MulticastReceiveInterfaceIP      string `json:"multicastReceiveInterfaceIP,omitempty"`

@@ -59,143 +59,143 @@ type SystemConfig struct {
 	ParentID                                          string      `json:"parentID,omitempty"`
 	ParentType                                        string      `json:"parentType,omitempty"`
 	Owner                                             string      `json:"owner,omitempty"`
-	AARFlowStatsInterval                              int         `json:"AARFlowStatsInterval,omitempty"`
-	AARProbeStatsInterval                             int         `json:"AARProbeStatsInterval,omitempty"`
+	AARFlowStatsInterval                              int         `json:"AARFlowStatsInterval"`
+	AARProbeStatsInterval                             int         `json:"AARProbeStatsInterval"`
 	ACLAllowOrigin                                    string      `json:"ACLAllowOrigin,omitempty"`
-	ECMPCount                                         int         `json:"ECMPCount,omitempty"`
-	LDAPSyncInterval                                  int         `json:"LDAPSyncInterval,omitempty"`
+	ECMPCount                                         int         `json:"ECMPCount"`
+	LDAPSyncInterval                                  int         `json:"LDAPSyncInterval"`
 	LDAPTrustStoreCertifcate                          string      `json:"LDAPTrustStoreCertifcate,omitempty"`
 	LDAPTrustStorePassword                            string      `json:"LDAPTrustStorePassword,omitempty"`
-	ADGatewayPurgeTime                                int         `json:"ADGatewayPurgeTime,omitempty"`
-	RDLowerLimit                                      int         `json:"RDLowerLimit,omitempty"`
-	RDPublicNetworkLowerLimit                         int         `json:"RDPublicNetworkLowerLimit,omitempty"`
-	RDPublicNetworkUpperLimit                         int         `json:"RDPublicNetworkUpperLimit,omitempty"`
-	RDUpperLimit                                      int         `json:"RDUpperLimit,omitempty"`
+	ADGatewayPurgeTime                                int         `json:"ADGatewayPurgeTime"`
+	RDLowerLimit                                      int         `json:"RDLowerLimit"`
+	RDPublicNetworkLowerLimit                         int         `json:"RDPublicNetworkLowerLimit"`
+	RDPublicNetworkUpperLimit                         int         `json:"RDPublicNetworkUpperLimit"`
+	RDUpperLimit                                      int         `json:"RDUpperLimit"`
 	ZFBBootstrapEnabled                               bool        `json:"ZFBBootstrapEnabled"`
-	ZFBRequestRetryTimer                              int         `json:"ZFBRequestRetryTimer,omitempty"`
-	ZFBSchedulerStaleRequestTimeout                   int         `json:"ZFBSchedulerStaleRequestTimeout,omitempty"`
+	ZFBRequestRetryTimer                              int         `json:"ZFBRequestRetryTimer"`
+	ZFBSchedulerStaleRequestTimeout                   int         `json:"ZFBSchedulerStaleRequestTimeout"`
 	PGIDLowerLimit                                    interface{} `json:"PGIDLowerLimit,omitempty"`
 	PGIDUpperLimit                                    interface{} `json:"PGIDUpperLimit,omitempty"`
-	DHCPOptionSize                                    int         `json:"DHCPOptionSize,omitempty"`
-	VLANIDLowerLimit                                  int         `json:"VLANIDLowerLimit,omitempty"`
-	VLANIDUpperLimit                                  int         `json:"VLANIDUpperLimit,omitempty"`
-	VMCacheSize                                       int         `json:"VMCacheSize,omitempty"`
-	VMPurgeTime                                       int         `json:"VMPurgeTime,omitempty"`
-	VMResyncDeletionWaitTime                          int         `json:"VMResyncDeletionWaitTime,omitempty"`
-	VMResyncOutstandingInterval                       int         `json:"VMResyncOutstandingInterval,omitempty"`
-	VMUnreachableCleanupTime                          int         `json:"VMUnreachableCleanupTime,omitempty"`
-	VMUnreachableTime                                 int         `json:"VMUnreachableTime,omitempty"`
-	VNFTaskTimeout                                    int         `json:"VNFTaskTimeout,omitempty"`
-	VNIDLowerLimit                                    int         `json:"VNIDLowerLimit,omitempty"`
-	VNIDPublicNetworkLowerLimit                       int         `json:"VNIDPublicNetworkLowerLimit,omitempty"`
-	VNIDPublicNetworkUpperLimit                       int         `json:"VNIDPublicNetworkUpperLimit,omitempty"`
-	VNIDUpperLimit                                    int         `json:"VNIDUpperLimit,omitempty"`
-	APIKeyRenewalInterval                             int         `json:"APIKeyRenewalInterval,omitempty"`
-	APIKeyValidity                                    int         `json:"APIKeyValidity,omitempty"`
-	VPortInitStatefulTimer                            int         `json:"VPortInitStatefulTimer,omitempty"`
-	LRUCacheSizePerSubnet                             int         `json:"LRUCacheSizePerSubnet,omitempty"`
+	DHCPOptionSize                                    int         `json:"DHCPOptionSize"`
+	VLANIDLowerLimit                                  int         `json:"VLANIDLowerLimit"`
+	VLANIDUpperLimit                                  int         `json:"VLANIDUpperLimit"`
+	VMCacheSize                                       int         `json:"VMCacheSize"`
+	VMPurgeTime                                       int         `json:"VMPurgeTime"`
+	VMResyncDeletionWaitTime                          int         `json:"VMResyncDeletionWaitTime"`
+	VMResyncOutstandingInterval                       int         `json:"VMResyncOutstandingInterval"`
+	VMUnreachableCleanupTime                          int         `json:"VMUnreachableCleanupTime"`
+	VMUnreachableTime                                 int         `json:"VMUnreachableTime"`
+	VNFTaskTimeout                                    int         `json:"VNFTaskTimeout"`
+	VNIDLowerLimit                                    int         `json:"VNIDLowerLimit"`
+	VNIDPublicNetworkLowerLimit                       int         `json:"VNIDPublicNetworkLowerLimit"`
+	VNIDPublicNetworkUpperLimit                       int         `json:"VNIDPublicNetworkUpperLimit"`
+	VNIDUpperLimit                                    int         `json:"VNIDUpperLimit"`
+	APIKeyRenewalInterval                             int         `json:"APIKeyRenewalInterval"`
+	APIKeyValidity                                    int         `json:"APIKeyValidity"`
+	VPortInitStatefulTimer                            int         `json:"VPortInitStatefulTimer"`
+	LRUCacheSizePerSubnet                             int         `json:"LRUCacheSizePerSubnet"`
 	VSCOnSameVersionAsVSD                             bool        `json:"VSCOnSameVersionAsVSD"`
 	VSDReadOnlyMode                                   bool        `json:"VSDReadOnlyMode"`
 	VSDUpgradeIsComplete                              bool        `json:"VSDUpgradeIsComplete"`
-	ASNumber                                          int         `json:"ASNumber,omitempty"`
-	VSSStatsInterval                                  int         `json:"VSSStatsInterval,omitempty"`
-	RTLowerLimit                                      int         `json:"RTLowerLimit,omitempty"`
-	RTPublicNetworkLowerLimit                         int         `json:"RTPublicNetworkLowerLimit,omitempty"`
-	RTPublicNetworkUpperLimit                         int         `json:"RTPublicNetworkUpperLimit,omitempty"`
-	RTUpperLimit                                      int         `json:"RTUpperLimit,omitempty"`
-	EVPNBGPCommunityTagASNumber                       int         `json:"EVPNBGPCommunityTagASNumber,omitempty"`
-	EVPNBGPCommunityTagLowerLimit                     int         `json:"EVPNBGPCommunityTagLowerLimit,omitempty"`
-	EVPNBGPCommunityTagUpperLimit                     int         `json:"EVPNBGPCommunityTagUpperLimit,omitempty"`
-	PageMaxSize                                       int         `json:"pageMaxSize,omitempty"`
-	PageSize                                          int         `json:"pageSize,omitempty"`
+	ASNumber                                          int         `json:"ASNumber"`
+	VSSStatsInterval                                  int         `json:"VSSStatsInterval"`
+	RTLowerLimit                                      int         `json:"RTLowerLimit"`
+	RTPublicNetworkLowerLimit                         int         `json:"RTPublicNetworkLowerLimit"`
+	RTPublicNetworkUpperLimit                         int         `json:"RTPublicNetworkUpperLimit"`
+	RTUpperLimit                                      int         `json:"RTUpperLimit"`
+	EVPNBGPCommunityTagASNumber                       int         `json:"EVPNBGPCommunityTagASNumber"`
+	EVPNBGPCommunityTagLowerLimit                     int         `json:"EVPNBGPCommunityTagLowerLimit"`
+	EVPNBGPCommunityTagUpperLimit                     int         `json:"EVPNBGPCommunityTagUpperLimit"`
+	PageMaxSize                                       int         `json:"pageMaxSize"`
+	PageSize                                          int         `json:"pageSize"`
 	LastUpdatedBy                                     string      `json:"lastUpdatedBy,omitempty"`
-	MaxFailedLogins                                   int         `json:"maxFailedLogins,omitempty"`
-	MaxResponse                                       int         `json:"maxResponse,omitempty"`
+	MaxFailedLogins                                   int         `json:"maxFailedLogins"`
+	MaxResponse                                       int         `json:"maxResponse"`
 	AccumulateLicensesEnabled                         bool        `json:"accumulateLicensesEnabled"`
 	VcinLoadBalancerIP                                string      `json:"vcinLoadBalancerIP,omitempty"`
 	PerDomainVlanIdEnabled                            bool        `json:"perDomainVlanIdEnabled"`
-	PerformancePathSelectionVNID                      int         `json:"performancePathSelectionVNID,omitempty"`
-	ServiceIDUpperLimit                               int         `json:"serviceIDUpperLimit,omitempty"`
+	PerformancePathSelectionVNID                      int         `json:"performancePathSelectionVNID"`
+	ServiceIDUpperLimit                               int         `json:"serviceIDUpperLimit"`
 	KeyServerMonitorEnabled                           bool        `json:"keyServerMonitorEnabled"`
-	KeyServerVSDDataSynchronizationInterval           int         `json:"keyServerVSDDataSynchronizationInterval,omitempty"`
-	OffsetCustomerID                                  int         `json:"offsetCustomerID,omitempty"`
-	OffsetServiceID                                   int         `json:"offsetServiceID,omitempty"`
+	KeyServerVSDDataSynchronizationInterval           int         `json:"keyServerVSDDataSynchronizationInterval"`
+	OffsetCustomerID                                  int         `json:"offsetCustomerID"`
+	OffsetServiceID                                   int         `json:"offsetServiceID"`
 	VirtualFirewallRulesEnabled                       bool        `json:"virtualFirewallRulesEnabled"`
 	EjbcaNSGCertificateProfile                        string      `json:"ejbcaNSGCertificateProfile,omitempty"`
 	EjbcaNSGEndEntityProfile                          string      `json:"ejbcaNSGEndEntityProfile,omitempty"`
 	EjbcaOCSPResponderCN                              string      `json:"ejbcaOCSPResponderCN,omitempty"`
 	EjbcaOCSPResponderURI                             string      `json:"ejbcaOCSPResponderURI,omitempty"`
 	EjbcaVspRootCa                                    string      `json:"ejbcaVspRootCa,omitempty"`
-	AlarmsMaxPerObject                                int         `json:"alarmsMaxPerObject,omitempty"`
+	AlarmsMaxPerObject                                int         `json:"alarmsMaxPerObject"`
 	ElasticClusterName                                string      `json:"elasticClusterName,omitempty"`
 	AllowEnterpriseAvatarOnNSG                        bool        `json:"allowEnterpriseAvatarOnNSG"`
 	GlobalMACAddress                                  string      `json:"globalMACAddress,omitempty"`
 	FlowCollectionEnabled                             bool        `json:"flowCollectionEnabled"`
-	InactiveTimeout                                   int         `json:"inactiveTimeout,omitempty"`
-	InfrastructureBGPASNumber                         int         `json:"infrastructureBGPASNumber,omitempty"`
+	InactiveTimeout                                   int         `json:"inactiveTimeout"`
+	InfrastructureBGPASNumber                         int         `json:"infrastructureBGPASNumber"`
 	EntityScope                                       string      `json:"entityScope,omitempty"`
 	DomainTunnelType                                  string      `json:"domainTunnelType,omitempty"`
-	PostProcessorThreadsCount                         int         `json:"postProcessorThreadsCount,omitempty"`
-	GroupKeyDefaultSEKGenerationInterval              int         `json:"groupKeyDefaultSEKGenerationInterval,omitempty"`
-	GroupKeyDefaultSEKLifetime                        int         `json:"groupKeyDefaultSEKLifetime,omitempty"`
+	PostProcessorThreadsCount                         int         `json:"postProcessorThreadsCount"`
+	GroupKeyDefaultSEKGenerationInterval              int         `json:"groupKeyDefaultSEKGenerationInterval"`
+	GroupKeyDefaultSEKLifetime                        int         `json:"groupKeyDefaultSEKLifetime"`
 	GroupKeyDefaultSEKPayloadEncryptionAlgorithm      string      `json:"groupKeyDefaultSEKPayloadEncryptionAlgorithm,omitempty"`
 	GroupKeyDefaultSEKPayloadSigningAlgorithm         string      `json:"groupKeyDefaultSEKPayloadSigningAlgorithm,omitempty"`
-	GroupKeyDefaultSeedGenerationInterval             int         `json:"groupKeyDefaultSeedGenerationInterval,omitempty"`
-	GroupKeyDefaultSeedLifetime                       int         `json:"groupKeyDefaultSeedLifetime,omitempty"`
+	GroupKeyDefaultSeedGenerationInterval             int         `json:"groupKeyDefaultSeedGenerationInterval"`
+	GroupKeyDefaultSeedLifetime                       int         `json:"groupKeyDefaultSeedLifetime"`
 	GroupKeyDefaultSeedPayloadAuthenticationAlgorithm string      `json:"groupKeyDefaultSeedPayloadAuthenticationAlgorithm,omitempty"`
 	GroupKeyDefaultSeedPayloadEncryptionAlgorithm     string      `json:"groupKeyDefaultSeedPayloadEncryptionAlgorithm,omitempty"`
 	GroupKeyDefaultSeedPayloadSigningAlgorithm        string      `json:"groupKeyDefaultSeedPayloadSigningAlgorithm,omitempty"`
 	GroupKeyDefaultTrafficAuthenticationAlgorithm     string      `json:"groupKeyDefaultTrafficAuthenticationAlgorithm,omitempty"`
 	GroupKeyDefaultTrafficEncryptionAlgorithm         string      `json:"groupKeyDefaultTrafficEncryptionAlgorithm,omitempty"`
-	GroupKeyDefaultTrafficEncryptionKeyLifetime       int         `json:"groupKeyDefaultTrafficEncryptionKeyLifetime,omitempty"`
-	GroupKeyGenerationIntervalOnForcedReKey           int         `json:"groupKeyGenerationIntervalOnForcedReKey,omitempty"`
-	GroupKeyGenerationIntervalOnRevoke                int         `json:"groupKeyGenerationIntervalOnRevoke,omitempty"`
-	GroupKeyMinimumSEKGenerationInterval              int         `json:"groupKeyMinimumSEKGenerationInterval,omitempty"`
-	GroupKeyMinimumSEKLifetime                        int         `json:"groupKeyMinimumSEKLifetime,omitempty"`
-	GroupKeyMinimumSeedGenerationInterval             int         `json:"groupKeyMinimumSeedGenerationInterval,omitempty"`
-	GroupKeyMinimumSeedLifetime                       int         `json:"groupKeyMinimumSeedLifetime,omitempty"`
-	GroupKeyMinimumTrafficEncryptionKeyLifetime       int         `json:"groupKeyMinimumTrafficEncryptionKeyLifetime,omitempty"`
+	GroupKeyDefaultTrafficEncryptionKeyLifetime       int         `json:"groupKeyDefaultTrafficEncryptionKeyLifetime"`
+	GroupKeyGenerationIntervalOnForcedReKey           int         `json:"groupKeyGenerationIntervalOnForcedReKey"`
+	GroupKeyGenerationIntervalOnRevoke                int         `json:"groupKeyGenerationIntervalOnRevoke"`
+	GroupKeyMinimumSEKGenerationInterval              int         `json:"groupKeyMinimumSEKGenerationInterval"`
+	GroupKeyMinimumSEKLifetime                        int         `json:"groupKeyMinimumSEKLifetime"`
+	GroupKeyMinimumSeedGenerationInterval             int         `json:"groupKeyMinimumSeedGenerationInterval"`
+	GroupKeyMinimumSeedLifetime                       int         `json:"groupKeyMinimumSeedLifetime"`
+	GroupKeyMinimumTrafficEncryptionKeyLifetime       int         `json:"groupKeyMinimumTrafficEncryptionKeyLifetime"`
 	NsgBootstrapEndpoint                              string      `json:"nsgBootstrapEndpoint,omitempty"`
 	NsgConfigEndpoint                                 string      `json:"nsgConfigEndpoint,omitempty"`
 	NsgLocalUiUrl                                     string      `json:"nsgLocalUiUrl,omitempty"`
-	EsiID                                             int         `json:"esiID,omitempty"`
+	EsiID                                             int         `json:"esiID"`
 	CsprootAuthenticationMethod                       string      `json:"csprootAuthenticationMethod,omitempty"`
 	StackTraceEnabled                                 bool        `json:"stackTraceEnabled"`
-	StatefulACLNonTCPTimeout                          int         `json:"statefulACLNonTCPTimeout,omitempty"`
-	StatefulACLTCPTimeout                             int         `json:"statefulACLTCPTimeout,omitempty"`
-	StaticWANServicePurgeTime                         int         `json:"staticWANServicePurgeTime,omitempty"`
+	StatefulACLNonTCPTimeout                          int         `json:"statefulACLNonTCPTimeout"`
+	StatefulACLTCPTimeout                             int         `json:"statefulACLTCPTimeout"`
+	StaticWANServicePurgeTime                         int         `json:"staticWANServicePurgeTime"`
 	StatisticsEnabled                                 bool        `json:"statisticsEnabled"`
 	StatsCollectorAddress                             string      `json:"statsCollectorAddress,omitempty"`
 	StatsCollectorPort                                string      `json:"statsCollectorPort,omitempty"`
 	StatsCollectorProtoBufPort                        string      `json:"statsCollectorProtoBufPort,omitempty"`
-	StatsMaxDataPoints                                int         `json:"statsMaxDataPoints,omitempty"`
-	StatsMinDuration                                  int         `json:"statsMinDuration,omitempty"`
-	StatsNumberOfDataPoints                           int         `json:"statsNumberOfDataPoints,omitempty"`
+	StatsMaxDataPoints                                int         `json:"statsMaxDataPoints"`
+	StatsMinDuration                                  int         `json:"statsMinDuration"`
+	StatsNumberOfDataPoints                           int         `json:"statsNumberOfDataPoints"`
 	StatsTSDBServerAddress                            string      `json:"statsTSDBServerAddress,omitempty"`
-	StickyECMPIdleTimeout                             int         `json:"stickyECMPIdleTimeout,omitempty"`
+	StickyECMPIdleTimeout                             int         `json:"stickyECMPIdleTimeout"`
 	AttachProbeToIPsecNPM                             bool        `json:"attachProbeToIPsecNPM"`
 	AttachProbeToVXLANNPM                             bool        `json:"attachProbeToVXLANNPM"`
-	SubnetResyncInterval                              int         `json:"subnetResyncInterval,omitempty"`
-	SubnetResyncOutstandingInterval                   int         `json:"subnetResyncOutstandingInterval,omitempty"`
-	CustomerIDUpperLimit                              int         `json:"customerIDUpperLimit,omitempty"`
+	SubnetResyncInterval                              int         `json:"subnetResyncInterval"`
+	SubnetResyncOutstandingInterval                   int         `json:"subnetResyncOutstandingInterval"`
+	CustomerIDUpperLimit                              int         `json:"customerIDUpperLimit"`
 	CustomerKey                                       string      `json:"customerKey,omitempty"`
 	AvatarBasePath                                    string      `json:"avatarBasePath,omitempty"`
 	AvatarBaseURL                                     string      `json:"avatarBaseURL,omitempty"`
-	EventLogCleanupInterval                           int         `json:"eventLogCleanupInterval,omitempty"`
-	EventLogEntryMaxAge                               int         `json:"eventLogEntryMaxAge,omitempty"`
-	EventProcessorInterval                            int         `json:"eventProcessorInterval,omitempty"`
-	EventProcessorMaxEventsCount                      int         `json:"eventProcessorMaxEventsCount,omitempty"`
-	EventProcessorTimeout                             int         `json:"eventProcessorTimeout,omitempty"`
-	TwoFactorCodeExpiry                               int         `json:"twoFactorCodeExpiry,omitempty"`
-	TwoFactorCodeLength                               int         `json:"twoFactorCodeLength,omitempty"`
-	TwoFactorCodeSeedLength                           int         `json:"twoFactorCodeSeedLength,omitempty"`
+	EventLogCleanupInterval                           int         `json:"eventLogCleanupInterval"`
+	EventLogEntryMaxAge                               int         `json:"eventLogEntryMaxAge"`
+	EventProcessorInterval                            int         `json:"eventProcessorInterval"`
+	EventProcessorMaxEventsCount                      int         `json:"eventProcessorMaxEventsCount"`
+	EventProcessorTimeout                             int         `json:"eventProcessorTimeout"`
+	TwoFactorCodeExpiry                               int         `json:"twoFactorCodeExpiry"`
+	TwoFactorCodeLength                               int         `json:"twoFactorCodeLength"`
+	TwoFactorCodeSeedLength                           int         `json:"twoFactorCodeSeedLength"`
 	ExternalID                                        string      `json:"externalID,omitempty"`
-	DynamicWANServiceDiffTime                         int         `json:"dynamicWANServiceDiffTime,omitempty"`
+	DynamicWANServiceDiffTime                         int         `json:"dynamicWANServiceDiffTime"`
 	SyslogDestinationHost                             string      `json:"syslogDestinationHost,omitempty"`
-	SyslogDestinationPort                             int         `json:"syslogDestinationPort,omitempty"`
-	SysmonCleanupTaskInterval                         int         `json:"sysmonCleanupTaskInterval,omitempty"`
-	SysmonNodePresenceTimeout                         int         `json:"sysmonNodePresenceTimeout,omitempty"`
-	SysmonProbeResponseTimeout                        int         `json:"sysmonProbeResponseTimeout,omitempty"`
+	SyslogDestinationPort                             int         `json:"syslogDestinationPort"`
+	SysmonCleanupTaskInterval                         int         `json:"sysmonCleanupTaskInterval"`
+	SysmonNodePresenceTimeout                         int         `json:"sysmonNodePresenceTimeout"`
+	SysmonProbeResponseTimeout                        int         `json:"sysmonProbeResponseTimeout"`
 	SystemAvatarData                                  string      `json:"systemAvatarData,omitempty"`
 	SystemAvatarType                                  string      `json:"systemAvatarType,omitempty"`
 }

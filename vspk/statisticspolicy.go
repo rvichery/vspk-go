@@ -61,7 +61,7 @@ type StatisticsPolicy struct {
 	Owner                   string `json:"owner,omitempty"`
 	Name                    string `json:"name,omitempty"`
 	LastUpdatedBy           string `json:"lastUpdatedBy,omitempty"`
-	DataCollectionFrequency int    `json:"dataCollectionFrequency,omitempty"`
+	DataCollectionFrequency int    `json:"dataCollectionFrequency"`
 	Description             string `json:"description,omitempty"`
 	EntityScope             string `json:"entityScope,omitempty"`
 	ExternalID              string `json:"externalID,omitempty"`

@@ -85,7 +85,7 @@ type EgressAdvFwdEntryTemplate struct {
 	DomainName             string `json:"domainName,omitempty"`
 	SourcePort             string `json:"sourcePort,omitempty"`
 	UplinkPreference       string `json:"uplinkPreference,omitempty"`
-	Priority               int    `json:"priority,omitempty"`
+	Priority               int    `json:"priority"`
 	Protocol               string `json:"protocol,omitempty"`
 	AssociatedLiveEntityID string `json:"associatedLiveEntityID,omitempty"`
 	StatsID                string `json:"statsID,omitempty"`

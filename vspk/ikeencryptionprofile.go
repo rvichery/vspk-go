@@ -59,24 +59,24 @@ type IKEEncryptionprofile struct {
 	ParentID                          string `json:"parentID,omitempty"`
 	ParentType                        string `json:"parentType,omitempty"`
 	Owner                             string `json:"owner,omitempty"`
-	DPDInterval                       int    `json:"DPDInterval,omitempty"`
+	DPDInterval                       int    `json:"DPDInterval"`
 	DPDMode                           string `json:"DPDMode,omitempty"`
-	DPDTimeout                        int    `json:"DPDTimeout,omitempty"`
+	DPDTimeout                        int    `json:"DPDTimeout"`
 	IPsecAuthenticationAlgorithm      string `json:"IPsecAuthenticationAlgorithm,omitempty"`
 	IPsecDontFragment                 bool   `json:"IPsecDontFragment"`
 	IPsecEnablePFS                    bool   `json:"IPsecEnablePFS"`
 	IPsecEncryptionAlgorithm          string `json:"IPsecEncryptionAlgorithm,omitempty"`
 	IPsecPreFragment                  bool   `json:"IPsecPreFragment"`
-	IPsecSALifetime                   int    `json:"IPsecSALifetime,omitempty"`
+	IPsecSALifetime                   int    `json:"IPsecSALifetime"`
 	IPsecSAReplayWindowSize           string `json:"IPsecSAReplayWindowSize,omitempty"`
 	ISAKMPAuthenticationMode          string `json:"ISAKMPAuthenticationMode,omitempty"`
 	ISAKMPDiffieHelmanGroupIdentifier string `json:"ISAKMPDiffieHelmanGroupIdentifier,omitempty"`
 	ISAKMPEncryptionAlgorithm         string `json:"ISAKMPEncryptionAlgorithm,omitempty"`
-	ISAKMPEncryptionKeyLifetime       int    `json:"ISAKMPEncryptionKeyLifetime,omitempty"`
+	ISAKMPEncryptionKeyLifetime       int    `json:"ISAKMPEncryptionKeyLifetime"`
 	ISAKMPHashAlgorithm               string `json:"ISAKMPHashAlgorithm,omitempty"`
 	Name                              string `json:"name,omitempty"`
 	LastUpdatedBy                     string `json:"lastUpdatedBy,omitempty"`
-	Sequence                          int    `json:"sequence,omitempty"`
+	Sequence                          int    `json:"sequence"`
 	Description                       string `json:"description,omitempty"`
 	EntityScope                       string `json:"entityScope,omitempty"`
 	AssociatedEnterpriseID            string `json:"associatedEnterpriseID,omitempty"`

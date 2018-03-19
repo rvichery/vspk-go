@@ -59,8 +59,8 @@ type DUCGroupBinding struct {
 	ParentID             string `json:"parentID,omitempty"`
 	ParentType           string `json:"parentType,omitempty"`
 	Owner                string `json:"owner,omitempty"`
-	OneWayDelay          int    `json:"oneWayDelay,omitempty"`
-	Priority             int    `json:"priority,omitempty"`
+	OneWayDelay          int    `json:"oneWayDelay"`
+	Priority             int    `json:"priority"`
 	AssociatedDUCGroupID string `json:"associatedDUCGroupID,omitempty"`
 }
 

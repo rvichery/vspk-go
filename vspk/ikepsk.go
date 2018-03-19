@@ -63,9 +63,9 @@ type IKEPSK struct {
 	LastUpdatedBy                     string `json:"lastUpdatedBy,omitempty"`
 	Description                       string `json:"description,omitempty"`
 	Signature                         string `json:"signature,omitempty"`
-	SigningCertificateSerialNumber    int    `json:"signingCertificateSerialNumber,omitempty"`
+	SigningCertificateSerialNumber    int    `json:"signingCertificateSerialNumber"`
 	EncryptedPSK                      string `json:"encryptedPSK,omitempty"`
-	EncryptingCertificateSerialNumber int    `json:"encryptingCertificateSerialNumber,omitempty"`
+	EncryptingCertificateSerialNumber int    `json:"encryptingCertificateSerialNumber"`
 	UnencryptedPSK                    string `json:"unencryptedPSK,omitempty"`
 	EntityScope                       string `json:"entityScope,omitempty"`
 	AssociatedEnterpriseID            string `json:"associatedEnterpriseID,omitempty"`

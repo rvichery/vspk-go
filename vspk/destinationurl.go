@@ -61,13 +61,13 @@ type Destinationurl struct {
 	Owner              string `json:"owner,omitempty"`
 	URL                string `json:"URL,omitempty"`
 	HTTPMethod         string `json:"HTTPMethod,omitempty"`
-	PacketCount        int    `json:"packetCount,omitempty"`
+	PacketCount        int    `json:"packetCount"`
 	LastUpdatedBy      string `json:"lastUpdatedBy,omitempty"`
-	PercentageWeight   int    `json:"percentageWeight,omitempty"`
-	Timeout            int    `json:"timeout,omitempty"`
+	PercentageWeight   int    `json:"percentageWeight"`
+	Timeout            int    `json:"timeout"`
 	EntityScope        string `json:"entityScope,omitempty"`
-	DownThresholdCount int    `json:"downThresholdCount,omitempty"`
-	ProbeInterval      int    `json:"probeInterval,omitempty"`
+	DownThresholdCount int    `json:"downThresholdCount"`
+	ProbeInterval      int    `json:"probeInterval"`
 	ExternalID         string `json:"externalID,omitempty"`
 }
 

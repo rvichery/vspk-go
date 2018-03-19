@@ -60,7 +60,7 @@ type VCenterEAMConfig struct {
 	ParentType          string `json:"parentType,omitempty"`
 	Owner               string `json:"owner,omitempty"`
 	EamServerIP         string `json:"eamServerIP,omitempty"`
-	EamServerPortNumber int    `json:"eamServerPortNumber,omitempty"`
+	EamServerPortNumber int    `json:"eamServerPortNumber"`
 	EamServerPortType   string `json:"eamServerPortType,omitempty"`
 	LastUpdatedBy       string `json:"lastUpdatedBy,omitempty"`
 	VibURL              string `json:"vibURL,omitempty"`

@@ -72,7 +72,7 @@ type ZoneTemplate struct {
 	AssociatedMulticastChannelMapID string `json:"associatedMulticastChannelMapID,omitempty"`
 	PublicZone                      bool   `json:"publicZone"`
 	Multicast                       string `json:"multicast,omitempty"`
-	NumberOfHostsInSubnets          int    `json:"numberOfHostsInSubnets,omitempty"`
+	NumberOfHostsInSubnets          int    `json:"numberOfHostsInSubnets"`
 	ExternalID                      string `json:"externalID,omitempty"`
 	DynamicIpv6Address              bool   `json:"dynamicIpv6Address"`
 }

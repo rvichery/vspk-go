@@ -65,7 +65,7 @@ type PolicyGroup struct {
 	TemplateID       string `json:"templateID,omitempty"`
 	Description      string `json:"description,omitempty"`
 	EntityScope      string `json:"entityScope,omitempty"`
-	PolicyGroupID    int    `json:"policyGroupID,omitempty"`
+	PolicyGroupID    int    `json:"policyGroupID"`
 	External         bool   `json:"external"`
 	ExternalID       string `json:"externalID,omitempty"`
 	Type             string `json:"type,omitempty"`

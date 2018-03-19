@@ -69,7 +69,7 @@ type NSPortTemplate struct {
 	PortType                    string `json:"portType,omitempty"`
 	Speed                       string `json:"speed,omitempty"`
 	AssociatedEgressQOSPolicyID string `json:"associatedEgressQOSPolicyID,omitempty"`
-	Mtu                         int    `json:"mtu,omitempty"`
+	Mtu                         int    `json:"mtu"`
 	ExternalID                  string `json:"externalID,omitempty"`
 }
 

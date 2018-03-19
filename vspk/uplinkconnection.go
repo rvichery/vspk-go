@@ -76,7 +76,7 @@ type UplinkConnection struct {
 	RoleOrder               string  `json:"roleOrder,omitempty"`
 	PortName                string  `json:"portName,omitempty"`
 	DownloadRateLimit       float64 `json:"downloadRateLimit,omitempty"`
-	UplinkID                int     `json:"uplinkID,omitempty"`
+	UplinkID                int     `json:"uplinkID"`
 	Username                string  `json:"username,omitempty"`
 	AssocUnderlayID         string  `json:"assocUnderlayID,omitempty"`
 	AssociatedBGPNeighborID string  `json:"associatedBGPNeighborID,omitempty"`

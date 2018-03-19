@@ -67,7 +67,7 @@ type FloatingIPACLTemplate struct {
 	Description            string `json:"description,omitempty"`
 	EntityScope            string `json:"entityScope,omitempty"`
 	PolicyState            string `json:"policyState,omitempty"`
-	Priority               int    `json:"priority,omitempty"`
+	Priority               int    `json:"priority"`
 	PriorityType           string `json:"priorityType,omitempty"`
 	AssociatedLiveEntityID string `json:"associatedLiveEntityID,omitempty"`
 	AutoGeneratePriority   string `json:"autoGeneratePriority,omitempty"`

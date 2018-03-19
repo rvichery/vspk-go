@@ -67,7 +67,7 @@ type VPort struct {
 	GatewayMACMoveRole                  string `json:"gatewayMACMoveRole,omitempty"`
 	Active                              bool   `json:"active"`
 	AddressSpoofing                     string `json:"addressSpoofing,omitempty"`
-	SegmentationID                      int    `json:"segmentationID,omitempty"`
+	SegmentationID                      int    `json:"segmentationID"`
 	SegmentationType                    string `json:"segmentationType,omitempty"`
 	Description                         string `json:"description,omitempty"`
 	FlowCollectionEnabled               string `json:"flowCollectionEnabled,omitempty"`

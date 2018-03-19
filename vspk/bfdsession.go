@@ -60,8 +60,8 @@ type BFDSession struct {
 	ParentType       string `json:"parentType,omitempty"`
 	Owner            string `json:"owner,omitempty"`
 	BFDDestinationIP string `json:"BFDDestinationIP,omitempty"`
-	BFDMultiplier    int    `json:"BFDMultiplier,omitempty"`
-	BFDTimer         int    `json:"BFDTimer,omitempty"`
+	BFDMultiplier    int    `json:"BFDMultiplier"`
+	BFDTimer         int    `json:"BFDTimer"`
 	LastUpdatedBy    string `json:"lastUpdatedBy,omitempty"`
 	EntityScope      string `json:"entityScope,omitempty"`
 	MultiHopEnabled  bool   `json:"multiHopEnabled"`

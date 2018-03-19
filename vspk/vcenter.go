@@ -59,7 +59,7 @@ type VCenter struct {
 	ParentID                               string `json:"parentID,omitempty"`
 	ParentType                             string `json:"parentType,omitempty"`
 	Owner                                  string `json:"owner,omitempty"`
-	VRSConfigurationTimeLimit              int    `json:"VRSConfigurationTimeLimit,omitempty"`
+	VRSConfigurationTimeLimit              int    `json:"VRSConfigurationTimeLimit"`
 	VRequireNuageMetadata                  bool   `json:"vRequireNuageMetadata"`
 	Name                                   string `json:"name,omitempty"`
 	Password                               string `json:"password,omitempty"`
@@ -68,18 +68,18 @@ type VCenter struct {
 	DataDNS2                               string `json:"dataDNS2,omitempty"`
 	DataGateway                            string `json:"dataGateway,omitempty"`
 	DataNetworkPortgroup                   string `json:"dataNetworkPortgroup,omitempty"`
-	DatapathSyncTimeout                    int    `json:"datapathSyncTimeout,omitempty"`
+	DatapathSyncTimeout                    int    `json:"datapathSyncTimeout"`
 	SecondaryDataUplinkDHCPEnabled         bool   `json:"secondaryDataUplinkDHCPEnabled"`
 	SecondaryDataUplinkEnabled             bool   `json:"secondaryDataUplinkEnabled"`
 	SecondaryDataUplinkInterface           string `json:"secondaryDataUplinkInterface,omitempty"`
-	SecondaryDataUplinkMTU                 int    `json:"secondaryDataUplinkMTU,omitempty"`
+	SecondaryDataUplinkMTU                 int    `json:"secondaryDataUplinkMTU"`
 	SecondaryDataUplinkPrimaryController   string `json:"secondaryDataUplinkPrimaryController,omitempty"`
 	SecondaryDataUplinkSecondaryController string `json:"secondaryDataUplinkSecondaryController,omitempty"`
-	SecondaryDataUplinkUnderlayID          int    `json:"secondaryDataUplinkUnderlayID,omitempty"`
+	SecondaryDataUplinkUnderlayID          int    `json:"secondaryDataUplinkUnderlayID"`
 	SecondaryNuageController               string `json:"secondaryNuageController,omitempty"`
 	MemorySizeInGB                         string `json:"memorySizeInGB,omitempty"`
 	RemoteSyslogServerIP                   string `json:"remoteSyslogServerIP,omitempty"`
-	RemoteSyslogServerPort                 int    `json:"remoteSyslogServerPort,omitempty"`
+	RemoteSyslogServerPort                 int    `json:"remoteSyslogServerPort"`
 	RemoteSyslogServerType                 string `json:"remoteSyslogServerType,omitempty"`
 	GenericSplitActivation                 bool   `json:"genericSplitActivation"`
 	SeparateDataNetwork                    bool   `json:"separateDataNetwork"`
@@ -87,15 +87,15 @@ type VCenter struct {
 	Description                            string `json:"description,omitempty"`
 	DestinationMirrorPort                  string `json:"destinationMirrorPort,omitempty"`
 	MetadataServerIP                       string `json:"metadataServerIP,omitempty"`
-	MetadataServerListenPort               int    `json:"metadataServerListenPort,omitempty"`
-	MetadataServerPort                     int    `json:"metadataServerPort,omitempty"`
+	MetadataServerListenPort               int    `json:"metadataServerListenPort"`
+	MetadataServerPort                     int    `json:"metadataServerPort"`
 	MetadataServiceEnabled                 bool   `json:"metadataServiceEnabled"`
 	NetworkUplinkInterface                 string `json:"networkUplinkInterface,omitempty"`
 	NetworkUplinkInterfaceGateway          string `json:"networkUplinkInterfaceGateway,omitempty"`
 	NetworkUplinkInterfaceIp               string `json:"networkUplinkInterfaceIp,omitempty"`
 	NetworkUplinkInterfaceNetmask          string `json:"networkUplinkInterfaceNetmask,omitempty"`
 	RevertiveControllerEnabled             bool   `json:"revertiveControllerEnabled"`
-	RevertiveTimer                         int    `json:"revertiveTimer,omitempty"`
+	RevertiveTimer                         int    `json:"revertiveTimer"`
 	NfsLogServer                           string `json:"nfsLogServer,omitempty"`
 	NfsMountPath                           string `json:"nfsMountPath,omitempty"`
 	MgmtDNS1                               string `json:"mgmtDNS1,omitempty"`
@@ -111,15 +111,15 @@ type VCenter struct {
 	OldAgencyName                          string `json:"oldAgencyName,omitempty"`
 	AllowDataDHCP                          bool   `json:"allowDataDHCP"`
 	AllowMgmtDHCP                          bool   `json:"allowMgmtDHCP"`
-	FlowEvictionThreshold                  int    `json:"flowEvictionThreshold,omitempty"`
+	FlowEvictionThreshold                  int    `json:"flowEvictionThreshold"`
 	VmNetworkPortgroup                     string `json:"vmNetworkPortgroup,omitempty"`
 	EnableVRSResourceReservation           bool   `json:"enableVRSResourceReservation"`
 	EntityScope                            string `json:"entityScope,omitempty"`
-	ConfiguredMetricsPushInterval          int    `json:"configuredMetricsPushInterval,omitempty"`
+	ConfiguredMetricsPushInterval          int    `json:"configuredMetricsPushInterval"`
 	ConnectionStatus                       bool   `json:"connectionStatus"`
 	PortgroupMetadata                      bool   `json:"portgroupMetadata"`
 	HostLevelManagement                    bool   `json:"hostLevelManagement"`
-	NovaClientVersion                      int    `json:"novaClientVersion,omitempty"`
+	NovaClientVersion                      int    `json:"novaClientVersion"`
 	NovaIdentityURLVersion                 string `json:"novaIdentityURLVersion,omitempty"`
 	NovaMetadataServiceAuthUrl             string `json:"novaMetadataServiceAuthUrl,omitempty"`
 	NovaMetadataServiceEndpoint            string `json:"novaMetadataServiceEndpoint,omitempty"`
@@ -136,9 +136,9 @@ type VCenter struct {
 	UpgradePackagePassword                 string `json:"upgradePackagePassword,omitempty"`
 	UpgradePackageURL                      string `json:"upgradePackageURL,omitempty"`
 	UpgradePackageUsername                 string `json:"upgradePackageUsername,omitempty"`
-	UpgradeScriptTimeLimit                 int    `json:"upgradeScriptTimeLimit,omitempty"`
+	UpgradeScriptTimeLimit                 int    `json:"upgradeScriptTimeLimit"`
 	CpuCount                               string `json:"cpuCount,omitempty"`
-	PrimaryDataUplinkUnderlayID            int    `json:"primaryDataUplinkUnderlayID,omitempty"`
+	PrimaryDataUplinkUnderlayID            int    `json:"primaryDataUplinkUnderlayID"`
 	PrimaryNuageController                 string `json:"primaryNuageController,omitempty"`
 	VrsConfigID                            string `json:"vrsConfigID,omitempty"`
 	VrsPassword                            string `json:"vrsPassword,omitempty"`
@@ -149,9 +149,9 @@ type VCenter struct {
 	StaticRouteNetmask                     string `json:"staticRouteNetmask,omitempty"`
 	NtpServer1                             string `json:"ntpServer1,omitempty"`
 	NtpServer2                             string `json:"ntpServer2,omitempty"`
-	HttpPort                               int    `json:"httpPort,omitempty"`
-	HttpsPort                              int    `json:"httpsPort,omitempty"`
-	Mtu                                    int    `json:"mtu,omitempty"`
+	HttpPort                               int    `json:"httpPort"`
+	HttpsPort                              int    `json:"httpsPort"`
+	Mtu                                    int    `json:"mtu"`
 	MultiVMSsupport                        bool   `json:"multiVMSsupport"`
 	MulticastReceiveInterface              string `json:"multicastReceiveInterface,omitempty"`
 	MulticastReceiveInterfaceIP            string `json:"multicastReceiveInterfaceIP,omitempty"`
@@ -162,7 +162,7 @@ type VCenter struct {
 	MulticastSendInterfaceNetmask          string `json:"multicastSendInterfaceNetmask,omitempty"`
 	MulticastSourcePortgroup               string `json:"multicastSourcePortgroup,omitempty"`
 	CustomizedScriptURL                    string `json:"customizedScriptURL,omitempty"`
-	AutoResolveFrequency                   int    `json:"autoResolveFrequency,omitempty"`
+	AutoResolveFrequency                   int    `json:"autoResolveFrequency"`
 	OvfURL                                 string `json:"ovfURL,omitempty"`
 	AvrsEnabled                            bool   `json:"avrsEnabled"`
 	AvrsProfile                            string `json:"avrsProfile,omitempty"`

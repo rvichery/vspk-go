@@ -67,7 +67,7 @@ type WANService struct {
 	ServicePolicy          string `json:"servicePolicy,omitempty"`
 	ServiceType            string `json:"serviceType,omitempty"`
 	Description            string `json:"description,omitempty"`
-	VnId                   int    `json:"vnId,omitempty"`
+	VnId                   int    `json:"vnId"`
 	EnterpriseName         string `json:"enterpriseName,omitempty"`
 	EntityScope            string `json:"entityScope,omitempty"`
 	DomainName             string `json:"domainName,omitempty"`

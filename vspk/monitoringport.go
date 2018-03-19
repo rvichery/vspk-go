@@ -60,7 +60,7 @@ type MonitoringPort struct {
 	ParentType      string `json:"parentType,omitempty"`
 	Owner           string `json:"owner,omitempty"`
 	Name            string `json:"name,omitempty"`
-	LastStateChange int    `json:"lastStateChange,omitempty"`
+	LastStateChange int    `json:"lastStateChange"`
 	Access          bool   `json:"access"`
 	Description     string `json:"description,omitempty"`
 	ResiliencyState string `json:"resiliencyState,omitempty"`

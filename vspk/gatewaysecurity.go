@@ -61,7 +61,7 @@ type GatewaySecurity struct {
 	Owner         string `json:"owner,omitempty"`
 	LastUpdatedBy string `json:"lastUpdatedBy,omitempty"`
 	GatewayID     string `json:"gatewayID,omitempty"`
-	Revision      int    `json:"revision,omitempty"`
+	Revision      int    `json:"revision"`
 	EntityScope   string `json:"entityScope,omitempty"`
 	ExternalID    string `json:"externalID,omitempty"`
 }

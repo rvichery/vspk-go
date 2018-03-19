@@ -69,7 +69,7 @@ type VirtualFirewallPolicy struct {
 	AllowAddressSpoof              bool   `json:"allowAddressSpoof"`
 	EntityScope                    string `json:"entityScope,omitempty"`
 	PolicyState                    string `json:"policyState,omitempty"`
-	Priority                       int    `json:"priority,omitempty"`
+	Priority                       int    `json:"priority"`
 	PriorityType                   string `json:"priorityType,omitempty"`
 	AssociatedEgressTemplateID     string `json:"associatedEgressTemplateID,omitempty"`
 	AssociatedIngressTemplateID    string `json:"associatedIngressTemplateID,omitempty"`

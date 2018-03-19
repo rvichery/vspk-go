@@ -66,7 +66,7 @@ type InfrastructureVscProfile struct {
 	FirstController  string `json:"firstController,omitempty"`
 	EnterpriseID     string `json:"enterpriseID,omitempty"`
 	EntityScope      string `json:"entityScope,omitempty"`
-	ProbeInterval    int    `json:"probeInterval,omitempty"`
+	ProbeInterval    int    `json:"probeInterval"`
 	ExternalID       string `json:"externalID,omitempty"`
 }
 

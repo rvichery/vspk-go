@@ -63,14 +63,14 @@ type OSPFInstance struct {
 	LastUpdatedBy                   string `json:"lastUpdatedBy,omitempty"`
 	Description                     string `json:"description,omitempty"`
 	EntityScope                     string `json:"entityScope,omitempty"`
-	Preference                      int    `json:"preference,omitempty"`
+	Preference                      int    `json:"preference"`
 	AssociatedExportRoutingPolicyID string `json:"associatedExportRoutingPolicyID,omitempty"`
 	AssociatedImportRoutingPolicyID string `json:"associatedImportRoutingPolicyID,omitempty"`
 	SuperBackboneEnabled            bool   `json:"superBackboneEnabled"`
-	ExportLimit                     int    `json:"exportLimit,omitempty"`
+	ExportLimit                     int    `json:"exportLimit"`
 	ExportToOverlay                 bool   `json:"exportToOverlay"`
 	ExternalID                      string `json:"externalID,omitempty"`
-	ExternalPreference              int    `json:"externalPreference,omitempty"`
+	ExternalPreference              int    `json:"externalPreference"`
 }
 
 // NewOSPFInstance returns a new *OSPFInstance

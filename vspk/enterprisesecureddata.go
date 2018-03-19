@@ -62,7 +62,7 @@ type EnterpriseSecuredData struct {
 	Hash                      string `json:"hash,omitempty"`
 	LastUpdatedBy             string `json:"lastUpdatedBy,omitempty"`
 	Data                      string `json:"data,omitempty"`
-	SekId                     int    `json:"sekId,omitempty"`
+	SekId                     int    `json:"sekId"`
 	KeyserverCertSerialNumber string `json:"keyserverCertSerialNumber,omitempty"`
 	SignedHash                string `json:"signedHash,omitempty"`
 	EntityScope               string `json:"entityScope,omitempty"`

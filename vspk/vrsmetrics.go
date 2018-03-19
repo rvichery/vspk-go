@@ -71,7 +71,7 @@ type VRSMetrics struct {
 	EntityScope                   string  `json:"entityScope,omitempty"`
 	LogDiskPartitionUtilization   float64 `json:"logDiskPartitionUtilization,omitempty"`
 	RootDiskPartitionUtilization  float64 `json:"rootDiskPartitionUtilization,omitempty"`
-	AppliedMetricsPushInterval    int     `json:"appliedMetricsPushInterval,omitempty"`
+	AppliedMetricsPushInterval    int     `json:"appliedMetricsPushInterval"`
 	AssociatedVCenterHypervisorID string  `json:"associatedVCenterHypervisorID,omitempty"`
 	CurrentVersion                string  `json:"currentVersion,omitempty"`
 	ExternalID                    string  `json:"externalID,omitempty"`

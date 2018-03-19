@@ -41,9 +41,9 @@ type Me struct {
 	ParentID              string `json:"parentID,omitempty"`
 	ParentType            string `json:"parentType,omitempty"`
 	Owner                 string `json:"owner,omitempty"`
-	AARFlowStatsInterval  int    `json:"AARFlowStatsInterval,omitempty"`
-	AARProbeStatsInterval int    `json:"AARProbeStatsInterval,omitempty"`
-	VSSStatsInterval      int    `json:"VSSStatsInterval,omitempty"`
+	AARFlowStatsInterval  int    `json:"AARFlowStatsInterval"`
+	AARProbeStatsInterval int    `json:"AARProbeStatsInterval"`
+	VSSStatsInterval      int    `json:"VSSStatsInterval"`
 	Password              string `json:"password,omitempty"`
 	LastName              string `json:"lastName,omitempty"`
 	LastUpdatedBy         string `json:"lastUpdatedBy,omitempty"`

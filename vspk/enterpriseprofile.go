@@ -60,7 +60,7 @@ type EnterpriseProfile struct {
 	ParentType                             string        `json:"parentType,omitempty"`
 	Owner                                  string        `json:"owner,omitempty"`
 	BGPEnabled                             bool          `json:"BGPEnabled"`
-	DHCPLeaseInterval                      int           `json:"DHCPLeaseInterval,omitempty"`
+	DHCPLeaseInterval                      int           `json:"DHCPLeaseInterval"`
 	VNFManagementEnabled                   bool          `json:"VNFManagementEnabled"`
 	Name                                   string        `json:"name,omitempty"`
 	LastUpdatedBy                          string        `json:"lastUpdatedBy,omitempty"`
@@ -71,7 +71,7 @@ type EnterpriseProfile struct {
 	AllowGatewayManagement                 bool          `json:"allowGatewayManagement"`
 	AllowTrustedForwardingClass            bool          `json:"allowTrustedForwardingClass"`
 	AllowedForwardingClasses               []interface{} `json:"allowedForwardingClasses,omitempty"`
-	FloatingIPsQuota                       int           `json:"floatingIPsQuota,omitempty"`
+	FloatingIPsQuota                       int           `json:"floatingIPsQuota"`
 	EnableApplicationPerformanceManagement bool          `json:"enableApplicationPerformanceManagement"`
 	EncryptionManagementMode               string        `json:"encryptionManagementMode,omitempty"`
 	EntityScope                            string        `json:"entityScope,omitempty"`
